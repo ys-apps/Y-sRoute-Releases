@@ -10,4 +10,4 @@
 - [第三者ライセンス・Electronランタイム表示](https://ys-apps.github.io/Y-sRoute-Releases/licenses.html)
 - [Y's アプリお問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdzVtf3UM9eiOe7GIHhvDd651iTbkwsD_bQ8KIqat9l2DkH5Q/viewform)
 
-> 公開準備中: ロゴ生成元の利用条件を確認後、正式公開版へ切り替えます。
+> 公開準備中: アカウントとクラウドデータのセルフサービス機能を実装・検証後、正式公開版へ切り替えます。
