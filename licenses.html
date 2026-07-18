@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>第三者ライセンス | Y'sRoute</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">← 公式案内</a>
+      <h1>第三者ライセンス</h1>
+    </header>
+    <main>
+      <p>
+        Y'sRouteは、各権利者が提供するオープンソースソフトウェアを使用しています。各ソフトウェアの権利はそれぞれの権利者に帰属し、各ライセンス条件が適用されます。
+      </p>
+      <p>
+        <a href="third-party-licenses.csv"
+          >配布対象依存パッケージの完全一覧（CSV）</a
+        >
+      </p>
+      <p>
+        <a href="THIRD_PARTY_NOTICES.txt"
+          >第三者ソフトウェアの著作権表示・ライセンス本文</a
+        >
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>主要パッケージ</th>
+            <th>バージョン</th>
+            <th>ライセンス</th>
+            <th>提供元</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>@supabase/supabase-js</td>
+            <td>2.104.0</td>
+            <td>MIT</td>
+            <td>
+              <a href="https://github.com/supabase/supabase-js">Supabase</a>
+            </td>
+          </tr>
+          <tr>
+            <td>better-sqlite3</td>
+            <td>11.10.0</td>
+            <td>MIT</td>
+            <td>
+              <a href="https://github.com/WiseLibs/better-sqlite3">WiseLibs</a>
+            </td>
+          </tr>
+          <tr>
+            <td>dotenv</td>
+            <td>17.4.2</td>
+            <td>BSD-2-Clause</td>
+            <td><a href="https://github.com/motdotla/dotenv">dotenv</a></td>
+          </tr>
+          <tr>
+            <td>jszip</td>
+            <td>3.10.1</td>
+            <td>MIT OR GPL-3.0-or-later（Y'sRouteではMITを選択）</td>
+            <td><a href="https://github.com/Stuk/jszip">JSZip</a></td>
+          </tr>
+          <tr>
+            <td>lucide-react</td>
+            <td>1.16.0</td>
+            <td>ISC</td>
+            <td><a href="https://github.com/lucide-icons/lucide">Lucide</a></td>
+          </tr>
+          <tr>
+            <td>react / react-dom</td>
+            <td>18.3.1</td>
+            <td>MIT</td>
+            <td><a href="https://github.com/facebook/react">React</a></td>
+          </tr>
+          <tr>
+            <td>uuid</td>
+            <td>11.1.0</td>
+            <td>MIT</td>
+            <td><a href="https://github.com/uuidjs/uuid">uuid</a></td>
+          </tr>
+          <tr>
+            <td>zod</td>
+            <td>3.25.76</td>
+            <td>MIT</td>
+            <td><a href="https://github.com/colinhacks/zod">Zod</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>内製ライブラリ</h2>
+      <p>
+        <code>cr-xp-sdk</code
+        >はY'sが保有する内製ライブラリであり、第三者オープンソースライセンスの対象ではありません。非公開・独自ライセンスでY'sRouteへ組み込んでいます。
+      </p>
+      <h2>監査方法</h2>
+      <p>
+        <code>package-lock.json</code
+        >と配布対象の<code>node_modules</code>にある<code>package.json</code>を照合し、開発専用依存を除外した第三者パッケージ71件のパッケージ・バージョン・ライセンス識別子を確認しました。これとは別に内製<code
+          >cr-xp-sdk</code
+        >
+        1件を使用しています。
+      </p>
+    </main>
+    <footer><a href="index.html">Y'sRoute 公式案内へ戻る</a></footer>
+  </body>
+</html>

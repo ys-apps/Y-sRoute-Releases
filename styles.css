@@ -1,0 +1,81 @@
+:root {
+  color-scheme: dark;
+  font-family: "Yu Gothic UI", "Meiryo", sans-serif;
+  background: #171317;
+  color: #f2e9f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  line-height: 1.75;
+}
+a {
+  color: #ff79cf;
+}
+header,
+main,
+footer {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+}
+header {
+  padding: 48px 0 24px;
+}
+main {
+  padding-bottom: 48px;
+}
+footer {
+  padding: 24px 0 48px;
+  border-top: 1px solid #4b3c49;
+  color: #c9bbc5;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.35;
+}
+h2 {
+  margin-top: 2em;
+  border-bottom: 1px solid #4b3c49;
+  padding-bottom: 0.35em;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 20px;
+}
+.card {
+  background: #231a23;
+  border: 1px solid #4b3c49;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px 0;
+}
+.notice {
+  border-left: 4px solid #ff00b3;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+}
+th,
+td {
+  border: 1px solid #4b3c49;
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+code {
+  background: #30242f;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+li + li {
+  margin-top: 0.35em;
+}
