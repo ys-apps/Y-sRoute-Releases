@@ -1,6 +1,7 @@
 ================================================================================
 @supabase/auth-js 2.104.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/supabase/supabase-js.git
 ================================================================================
 
@@ -29,7 +30,8 @@ SOFTWARE.
 
 ================================================================================
 @supabase/functions-js 2.104.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/supabase/supabase-js.git
 ================================================================================
 
@@ -58,7 +60,8 @@ SOFTWARE.
 
 ================================================================================
 @supabase/phoenix 0.4.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/supabase/phoenix.git
 ================================================================================
 
@@ -88,7 +91,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 @supabase/postgrest-js 2.104.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/supabase/supabase-js.git
 ================================================================================
 
@@ -117,7 +121,8 @@ SOFTWARE.
 
 ================================================================================
 @supabase/realtime-js 2.104.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/supabase/supabase-js.git
 ================================================================================
 
@@ -146,7 +151,8 @@ SOFTWARE.
 
 ================================================================================
 @supabase/storage-js 2.104.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/supabase/supabase-js.git
 ================================================================================
 
@@ -175,7 +181,8 @@ SOFTWARE.
 
 ================================================================================
 @supabase/supabase-js 2.104.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/supabase/supabase-js.git
 ================================================================================
 
@@ -204,7 +211,8 @@ SOFTWARE.
 
 ================================================================================
 @types/node 22.19.17
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 ================================================================================
 
@@ -233,7 +241,8 @@ MIT License
 
 ================================================================================
 @types/ws 8.18.1
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 ================================================================================
 
@@ -262,7 +271,8 @@ MIT License
 
 ================================================================================
 base64-js 1.5.1
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/beatgammit/base64-js.git
 ================================================================================
 
@@ -291,7 +301,8 @@ THE SOFTWARE.
 
 ================================================================================
 better-sqlite3 11.10.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/WiseLibs/better-sqlite3.git
 ================================================================================
 
@@ -320,7 +331,8 @@ SOFTWARE.
 
 ================================================================================
 bindings 1.5.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/TooTallNate/node-bindings.git
 ================================================================================
 
@@ -350,7 +362,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 bl 4.1.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/rvagg/bl.git
 ================================================================================
 
@@ -371,7 +384,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ================================================================================
 buffer 5.7.1
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/feross/buffer.git
 ================================================================================
 
@@ -400,7 +414,8 @@ THE SOFTWARE.
 
 ================================================================================
 chownr 1.1.4
-License: ISC
+Declared license: ISC
+Applied license: ISC
 Source: git://github.com/isaacs/chownr.git
 ================================================================================
 
@@ -423,7 +438,8 @@ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ================================================================================
 core-util-is 1.0.3
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/isaacs/core-util-is
 ================================================================================
 
@@ -450,8 +466,9 @@ IN THE SOFTWARE.
 
 ================================================================================
 decompress-response 6.0.0
-License: MIT
-Source: sindresorhus/decompress-response
+Declared license: MIT
+Applied license: MIT
+Source: https://github.com/sindresorhus/decompress-response
 ================================================================================
 
 --- license ---
@@ -467,7 +484,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ================================================================================
 deep-extend 0.6.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/unclechu/node-deep-extend.git
 ================================================================================
 
@@ -495,7 +513,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 detect-libc 2.1.2
-License: Apache-2.0
+Declared license: Apache-2.0
+Applied license: Apache-2.0
 Source: git://github.com/lovell/detect-libc.git
 ================================================================================
 
@@ -704,7 +723,8 @@ Apache License
 
 ================================================================================
 dotenv 17.4.2
-License: BSD-2-Clause
+Declared license: BSD-2-Clause
+Applied license: BSD-2-Clause
 Source: git://github.com/motdotla/dotenv.git
 ================================================================================
 
@@ -735,7 +755,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ================================================================================
 end-of-stream 1.4.5
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/mafintosh/end-of-stream.git
 ================================================================================
 
@@ -764,7 +785,8 @@ THE SOFTWARE.
 
 ================================================================================
 expand-template 2.0.3
-License: (MIT OR WTFPL)
+Declared license: (MIT OR WTFPL)
+Applied license: MIT
 Source: https://github.com/ralphtheninja/expand-template.git
 ================================================================================
 
@@ -793,7 +815,8 @@ THE SOFTWARE.
 
 ================================================================================
 file-uri-to-path 1.0.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/TooTallNate/file-uri-to-path.git
 ================================================================================
 
@@ -821,7 +844,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 fs-constants 1.0.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/mafintosh/fs-constants.git
 ================================================================================
 
@@ -850,7 +874,8 @@ THE SOFTWARE.
 
 ================================================================================
 github-from-package 0.0.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/substack/github-from-package.git
 ================================================================================
 
@@ -876,7 +901,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 iceberg-js 0.8.1
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/supabase/iceberg-js
 ================================================================================
 
@@ -905,7 +931,8 @@ SOFTWARE.
 
 ================================================================================
 ieee754 1.2.1
-License: BSD-3-Clause
+Declared license: BSD-3-Clause
+Applied license: BSD-3-Clause
 Source: git://github.com/feross/ieee754.git
 ================================================================================
 
@@ -924,7 +951,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 ================================================================================
 immediate 3.0.6
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/calvinmetcalf/immediate.git
 ================================================================================
 
@@ -952,7 +980,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 inherits 2.0.4
-License: ISC
+Declared license: ISC
+Applied license: ISC
 Source: git://github.com/isaacs/inherits
 ================================================================================
 
@@ -975,7 +1004,8 @@ PERFORMANCE OF THIS SOFTWARE.
 
 ================================================================================
 ini 1.3.8
-License: ISC
+Declared license: ISC
+Applied license: ISC
 Source: git://github.com/isaacs/ini.git
 ================================================================================
 
@@ -998,7 +1028,8 @@ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ================================================================================
 isarray 1.0.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/juliangruber/isarray.git
 ================================================================================
 
@@ -1027,8 +1058,9 @@ SOFTWARE.
 
 ================================================================================
 js-tokens 4.0.0
-License: MIT
-Source: lydell/js-tokens
+Declared license: MIT
+Applied license: MIT
+Source: https://github.com/lydell/js-tokens
 ================================================================================
 
 --- LICENSE ---
@@ -1056,7 +1088,8 @@ THE SOFTWARE.
 
 ================================================================================
 jszip 3.10.1
-License: (MIT OR GPL-3.0-or-later)
+Declared license: (MIT OR GPL-3.0-or-later)
+Applied license: MIT
 Source: https://github.com/Stuk/jszip.git
 ================================================================================
 
@@ -1715,7 +1748,8 @@ copy of the Program in return for a fee.
 
 ================================================================================
 lie 3.3.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/calvinmetcalf/lie.git
 ================================================================================
 
@@ -1730,7 +1764,8 @@ The above copyright notice and this permission notice shall be included in all c
 
 ================================================================================
 loose-envify 1.4.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/zertosh/loose-envify.git
 ================================================================================
 
@@ -1759,7 +1794,8 @@ THE SOFTWARE.
 
 ================================================================================
 lucide-react 1.16.0
-License: ISC
+Declared license: ISC
+Applied license: ISC
 Source: https://github.com/lucide-icons/lucide.git
 ================================================================================
 
@@ -1810,8 +1846,9 @@ SOFTWARE.
 
 ================================================================================
 mimic-response 3.1.0
-License: MIT
-Source: sindresorhus/mimic-response
+Declared license: MIT
+Applied license: MIT
+Source: https://github.com/sindresorhus/mimic-response
 ================================================================================
 
 --- license ---
@@ -1827,7 +1864,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ================================================================================
 minimist 1.2.8
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/minimistjs/minimist.git
 ================================================================================
 
@@ -1853,7 +1891,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 mkdirp-classic 0.5.3
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/mafintosh/mkdirp-classic.git
 ================================================================================
 
@@ -1882,7 +1921,8 @@ THE SOFTWARE.
 
 ================================================================================
 napi-build-utils 2.0.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git+https://github.com/inspiredware/napi-build-utils.git
 ================================================================================
 
@@ -1911,7 +1951,8 @@ SOFTWARE.
 
 ================================================================================
 node-abi 3.89.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git+https://github.com/electron/node-abi.git
 ================================================================================
 
@@ -1940,7 +1981,8 @@ SOFTWARE.
 
 ================================================================================
 once 1.4.0
-License: ISC
+Declared license: ISC
+Applied license: ISC
 Source: git://github.com/isaacs/once
 ================================================================================
 
@@ -1963,8 +2005,9 @@ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ================================================================================
 pako 1.0.11
-License: (MIT AND Zlib)
-Source: nodeca/pako
+Declared license: (MIT AND Zlib)
+Applied license: MIT AND Zlib
+Source: https://github.com/nodeca/pako
 ================================================================================
 
 --- LICENSE ---
@@ -1990,9 +2033,32 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+--- SUPPLEMENTAL LICENSE NOTICE ---
+Zlib-licensed files under lib/zlib
+
+Copyright (C) 1995-2013 Jean-loup Gailly and Mark Adler
+Copyright (C) 2014-2017 Vitaly Puzrin and Andrey Tupitsin
+
+This software is provided 'as-is', without any express or implied warranty.
+In no event will the authors be held liable for any damages arising from the
+use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not claim
+   that you wrote the original software. If you use this software in a
+   product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.
+
 ================================================================================
 prebuild-install 7.1.3
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/prebuild/prebuild-install.git
 ================================================================================
 
@@ -2021,7 +2087,8 @@ THE SOFTWARE.
 
 ================================================================================
 process-nextick-args 2.0.1
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/calvinmetcalf/process-nextick-args.git
 ================================================================================
 
@@ -2048,7 +2115,8 @@ SOFTWARE.**
 
 ================================================================================
 pump 3.0.4
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/mafintosh/pump.git
 ================================================================================
 
@@ -2077,7 +2145,8 @@ THE SOFTWARE.
 
 ================================================================================
 rc 1.2.8
-License: (BSD-2-Clause OR MIT OR Apache-2.0)
+Declared license: (BSD-2-Clause OR MIT OR Apache-2.0)
+Applied license: MIT
 Source: https://github.com/dominictarr/rc.git
 ================================================================================
 
@@ -2154,7 +2223,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 react 18.3.1
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/facebook/react.git
 ================================================================================
 
@@ -2183,7 +2253,8 @@ SOFTWARE.
 
 ================================================================================
 react-dom 18.3.1
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/facebook/react.git
 ================================================================================
 
@@ -2212,7 +2283,8 @@ SOFTWARE.
 
 ================================================================================
 readable-stream 2.3.8
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/nodejs/readable-stream
 ================================================================================
 
@@ -2267,7 +2339,8 @@ IN THE SOFTWARE.
 
 ================================================================================
 readable-stream 3.6.2
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/nodejs/readable-stream
 ================================================================================
 
@@ -2322,7 +2395,8 @@ IN THE SOFTWARE.
 
 ================================================================================
 safe-buffer 5.1.2
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/feross/safe-buffer.git
 ================================================================================
 
@@ -2351,7 +2425,8 @@ THE SOFTWARE.
 
 ================================================================================
 safe-buffer 5.2.1
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/feross/safe-buffer.git
 ================================================================================
 
@@ -2380,7 +2455,8 @@ THE SOFTWARE.
 
 ================================================================================
 scheduler 0.23.2
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/facebook/react.git
 ================================================================================
 
@@ -2409,7 +2485,8 @@ SOFTWARE.
 
 ================================================================================
 semver 7.7.4
-License: ISC
+Declared license: ISC
+Applied license: ISC
 Source: git+https://github.com/npm/node-semver.git
 ================================================================================
 
@@ -2432,8 +2509,9 @@ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ================================================================================
 setimmediate 1.0.5
-License: MIT
-Source: YuzuJS/setImmediate
+Declared license: MIT
+Applied license: MIT
+Source: https://github.com/YuzuJS/setImmediate
 ================================================================================
 
 --- LICENSE.txt ---
@@ -2460,7 +2538,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 simple-concat 1.0.1
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/feross/simple-concat.git
 ================================================================================
 
@@ -2488,7 +2567,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 simple-get 4.0.1
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/feross/simple-get.git
 ================================================================================
 
@@ -2516,7 +2596,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 string_decoder 1.1.1
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/nodejs/string_decoder.git
 ================================================================================
 
@@ -2571,7 +2652,8 @@ IN THE SOFTWARE.
 
 ================================================================================
 string_decoder 1.3.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/nodejs/string_decoder.git
 ================================================================================
 
@@ -2626,8 +2708,9 @@ IN THE SOFTWARE.
 
 ================================================================================
 strip-json-comments 2.0.1
-License: MIT
-Source: sindresorhus/strip-json-comments
+Declared license: MIT
+Applied license: MIT
+Source: https://github.com/sindresorhus/strip-json-comments
 ================================================================================
 
 --- license ---
@@ -2655,7 +2738,8 @@ THE SOFTWARE.
 
 ================================================================================
 tar-fs 2.1.4
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/mafintosh/tar-fs.git
 ================================================================================
 
@@ -2684,7 +2768,8 @@ THE SOFTWARE.
 
 ================================================================================
 tar-stream 2.2.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git+https://github.com/mafintosh/tar-stream.git
 ================================================================================
 
@@ -2713,7 +2798,8 @@ THE SOFTWARE.
 
 ================================================================================
 tslib 2.8.1
-License: 0BSD
+Declared license: 0BSD
+Applied license: 0BSD
 Source: https://github.com/Microsoft/tslib.git
 ================================================================================
 
@@ -2733,7 +2819,8 @@ PERFORMANCE OF THIS SOFTWARE.
 
 ================================================================================
 tunnel-agent 0.6.0
-License: Apache-2.0
+Declared license: Apache-2.0
+Applied license: Apache-2.0
 Source: https://github.com/mikeal/tunnel-agent
 ================================================================================
 
@@ -2796,7 +2883,8 @@ END OF TERMS AND CONDITIONS
 
 ================================================================================
 undici-types 6.21.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git+https://github.com/nodejs/undici.git
 ================================================================================
 
@@ -2825,7 +2913,8 @@ SOFTWARE.
 
 ================================================================================
 util-deprecate 1.0.2
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git://github.com/TooTallNate/util-deprecate.git
 ================================================================================
 
@@ -2857,7 +2946,8 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 uuid 11.1.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: https://github.com/uuidjs/uuid.git
 ================================================================================
 
@@ -2874,7 +2964,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ================================================================================
 wrappy 1.0.2
-License: ISC
+Declared license: ISC
+Applied license: ISC
 Source: https://github.com/npm/wrappy
 ================================================================================
 
@@ -2897,7 +2988,8 @@ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ================================================================================
 ws 8.20.0
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git+https://github.com/websockets/ws.git
 ================================================================================
 
@@ -2925,7 +3017,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================================================================
 zod 3.25.76
-License: MIT
+Declared license: MIT
+Applied license: MIT
 Source: git+https://github.com/colinhacks/zod.git
 ================================================================================
 

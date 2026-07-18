@@ -7,6 +7,6 @@
 - [利用規約](https://ys-apps.github.io/Y-sRoute-Releases/terms.html)
 - [免責事項](https://ys-apps.github.io/Y-sRoute-Releases/disclaimer.html)
 - [データの開示・削除手順](https://ys-apps.github.io/Y-sRoute-Releases/data-requests.html)
-- [第三者ライセンス](https://ys-apps.github.io/Y-sRoute-Releases/licenses.html)
+- [第三者ライセンス・Electronランタイム表示](https://ys-apps.github.io/Y-sRoute-Releases/licenses.html)
 
 > 公開準備中: 問い合わせ用Googleフォームとロゴ生成元の利用条件を確認後、正式公開版へ切り替えます。
