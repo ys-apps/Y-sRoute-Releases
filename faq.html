@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FAQ | Y'sRoute</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <p>Y'sRoute Support</p>
+      <h1>FAQ</h1>
+      <nav class="manual-nav">
+        <a href="index.html">公式案内</a
+        ><a href="quick-start.html">クイックスタート</a
+        ><a href="manual.html">詳細マニュアル</a
+        ><a href="known-issues.html">既知の問題</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>ログインしないと使えませんか</h2>
+        <p>
+          いいえ。ゲーム、Todo、チャート、ゲームDB、ローカルバックアップ、OBS用ローカルページは未ログインでも利用できます。アカウント進捗・XP連携にはGoogleログインとオンライン接続が必要です。
+        </p>
+      </section>
+      <section>
+        <h2>SmartScreenまたは「不明な発行元」が表示されます</h2>
+        <p>
+          GitHub版は当面コード署名なしです。公式案内ページのバージョン固定URLから取得し、公開SHA-256との一致を確認してください。一致を確認できないファイルは実行しないでください。
+        </p>
+      </section>
+      <section>
+        <h2>Todoやチャートが見つかりません</h2>
+        <p>
+          Todo、チャート、ゲームDBはゲームごとに保存されます。画面上部で正しいゲームが選択されているか確認してください。
+        </p>
+      </section>
+      <section>
+        <h2>チャート開始ボタンを押せません</h2>
+        <p>
+          ゲームとチャートを選択し、チャートに1件以上の手順を追加してください。別のチャートが実行中の場合は完了または中止します。
+        </p>
+      </section>
+      <section>
+        <h2>OBSに何も表示されません</h2>
+        <p>
+          Y'sRouteを起動したままにし、設定のOBSタブに表示されたURLを使用してください。対象ゲーム／チャート、ポート39080の競合、OBSブラウザソース、表示設定を確認します。
+        </p>
+      </section>
+      <section>
+        <h2>データはどこに保存されますか</h2>
+        <p>
+          <code>%LOCALAPPDATA%\Y-sRoute</code
+          >です。通常の移行や保管にはフォルダーの直接コピーではなく、アプリの<code>設定</code>→<code>データ</code>→<code>バックアップを保存</code>を使用してください。
+        </p>
+      </section>
+      <section>
+        <h2>アンインストールするとデータも消えますか</h2>
+        <p>
+          いいえ。利用者データは自動削除されず、再インストール時に利用できます。
+        </p>
+      </section>
+      <section>
+        <h2>古いバージョンへ戻せますか</h2>
+        <p>
+          新しい版でDBが更新された後のダウングレードはサポートしません。旧版で作成したバックアップを保持し、問い合わせ先へ相談してください。
+        </p>
+      </section>
+      <section>
+        <h2>バックアップにログイン情報は含まれますか</h2>
+        <p>
+          含まれません。認証セッション、外部制御トークン、クラウドデータはバックアップ対象外です。
+        </p>
+      </section>
+      <section>
+        <h2>解決しない場合</h2>
+        <p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdzVtf3UM9eiOe7GIHhvDd651iTbkwsD_bQ8KIqat9l2DkH5Q/viewform"
+            >Y's アプリお問い合わせフォーム</a
+          >へ、アプリ版、Windows版、再現手順、表示メッセージを添えて報告してください。
+        </p>
+      </section>
+    </main>
+    <footer>公開主体: Y's<br />最終更新: 2026-07-19</footer>
+  </body>
+</html>

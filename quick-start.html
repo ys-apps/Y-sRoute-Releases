@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>画像付きクイックスタート | Y'sRoute</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <p>Y'sRoute Manual</p>
+      <h1>画像付きクイックスタート</h1>
+      <nav class="manual-nav">
+        <a href="index.html">公式案内</a><a href="manual.html">詳細マニュアル</a
+        ><a href="faq.html">FAQ</a><a href="known-issues.html">既知の問題</a>
+      </nav>
+    </header>
+    <main>
+      <section class="card success">
+        <p>
+          この手順だけで「インストール → 初回起動 → ゲーム作成 → Todo作成 →
+          チャート実行」まで進められます。ログインは任意です。
+        </p>
+      </section>
+      <section>
+        <h2>1. インストールして起動する</h2>
+        <ol>
+          <li>
+            公式案内ページの配布欄から最新の
+            <code>Y-sRoute-Setup-{version}-x64.exe</code> をダウンロードします。
+          </li>
+          <li>
+            PowerShellで
+            <code
+              >Get-FileHash .\Y-sRoute-Setup-{version}-x64.exe -Algorithm
+              SHA256</code
+            >
+            を実行し、公開されているSHA-256と一致することを確認します。
+          </li>
+          <li>
+            インストーラーを開き、画面に従って利用者単位でインストールします。
+          </li>
+          <li>
+            GitHub版は署名なしです。SmartScreenが表示された場合は、配布元URLとSHA-256を確認できた場合だけ
+            <code>詳細情報</code>、<code>実行</code>の順に選択します。
+          </li>
+          <li>
+            スタートメニューまたはデスクトップの
+            <code>Y'sRoute</code> を起動します。
+          </li>
+        </ol>
+        <img
+          class="manual-image"
+          src="assets/manual/quick-start-main.png"
+          alt="Y'sRouteの初回起動後のメイン画面。ゲーム追加ボタン、Todo、チャート、ゲームDBのタブを表示している"
+        />
+      </section>
+      <section>
+        <h2>2. ゲームとTodoを作成する</h2>
+        <ol>
+          <li>
+            画面上部のゲーム欄にある <code>＋</code>（ゲームを追加）を押します。
+          </li>
+          <li>
+            <code>ゲーム追加</code
+            >でゲーム名を入力し、<code>追加</code>を押します。
+          </li>
+          <li>
+            <code>Todo</code>タブを開き、Todo一覧の <code>＋</code>（Todo
+            を追加）を押します。
+          </li>
+          <li>
+            タイトルを入力し、必要に応じて詳細、ステータス、優先度、セクションを設定して
+            <code>追加</code>を押します。
+          </li>
+        </ol>
+        <img
+          class="manual-image"
+          src="assets/manual/quick-start-todo.png"
+          alt="クイックスタート用ゲームにTodoを作成した画面"
+        />
+      </section>
+      <section>
+        <h2>3. チャートを作成して実行する</h2>
+        <ol>
+          <li>
+            <code>チャート</code>タブを開き、チャート選択欄の
+            <code>＋</code>（新規チャート）を押します。
+          </li>
+          <li>
+            チャート名と既定実行モードを設定し、<code>追加</code>を押します。
+          </li>
+          <li>手順一覧から1つ以上の手順を追加します。</li>
+          <li>
+            <code>実行モード</code>を選び、<code>チャート開始</code>を押します。
+          </li>
+          <li>各手順を記録して最後まで進めます。</li>
+        </ol>
+        <img
+          class="manual-image"
+          src="assets/manual/quick-start-chart.png"
+          alt="Y'sRouteのチャート実行画面"
+        />
+      </section>
+      <section class="card">
+        <h2>次に読む項目</h2>
+        <p>
+          <a href="manual.html">詳細マニュアル</a
+          >では、ログイン、ゲームDB、OBS、更新、アンインストール、バックアップと復元を説明しています。
+        </p>
+      </section>
+    </main>
+    <footer>公開主体: Y's<br />最終更新: 2026-07-19</footer>
+  </body>
+</html>

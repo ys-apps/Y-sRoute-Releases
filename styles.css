@@ -79,3 +79,42 @@ code {
 li + li {
   margin-top: 0.35em;
 }
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+.link-grid a {
+  display: grid;
+  gap: 6px;
+  border: 1px solid #4b3c49;
+  border-radius: 10px;
+  padding: 16px;
+  text-decoration: none;
+  background: #2b202a;
+}
+.link-grid a:hover {
+  border-color: #ff79cf;
+}
+.link-grid span,
+.muted {
+  color: #c9bbc5;
+}
+.manual-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 18px 0 30px;
+  border: 1px solid #4b3c49;
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+.manual-nav {
+  margin-bottom: 28px;
+}
+.warning {
+  border-left: 4px solid #f4b942;
+}
+.success {
+  border-left: 4px solid #55c28a;
+}
