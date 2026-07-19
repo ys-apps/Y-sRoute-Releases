@@ -231,6 +231,8 @@ li + li {
   top: -8%;
 }
 .callout-marker {
+  --line-length: 0px;
+  --line-angle: 0deg;
   position: absolute;
   z-index: 2;
   display: grid;
@@ -245,6 +247,19 @@ li + li {
   font-weight: 800;
   line-height: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+}
+.callout-marker::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 1px);
+  width: max(0px, calc(var(--line-length) - 18px));
+  height: 3px;
+  border-radius: 999px;
+  background: #e6007e;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.95);
+  transform: rotate(var(--line-angle)) translateX(18px);
+  transform-origin: left center;
 }
 kbd {
   display: inline-block;
