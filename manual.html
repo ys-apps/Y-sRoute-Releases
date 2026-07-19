@@ -89,19 +89,37 @@
 
       <section id="todo">
         <h2>3. Todo画面</h2>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-todo">
+            <img src="assets/manual/manual-todo-checklist.png" alt="Todo画面の操作位置" />
+            <svg class="callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="25" y1="27" x2="25" y2="31" />
+              <line x1="52" y1="27" x2="52" y2="38.5" />
+              <line x1="84" y1="29" x2="90" y2="34" />
+              <line x1="72" y1="43" x2="69.5" y2="47.5" />
+              <line x1="87" y1="62" x2="93" y2="67.5" />
+            </svg>
+            <span class="callout-marker" style="left: 25%; top: 27%">1</span>
+            <span class="callout-marker" style="left: 52%; top: 27%">2</span>
+            <span class="callout-marker" style="left: 84%; top: 29%">3</span>
+            <span class="callout-marker" style="left: 72%; top: 43%">4</span>
+            <span class="callout-marker" style="left: 87%; top: 62%">5</span>
+          </div>
+          <figcaption>Todo画面全体。番号は下の表と対応します。<a href="assets/manual/manual-todo-checklist.png">画像を別画面で開く</a></figcaption>
+        </figure>
         <table class="button-reference">
-          <thead><tr><th>場所・ボタン</th><th>説明</th></tr></thead>
+          <thead><tr><th>番号</th><th>場所・ボタン</th><th>説明</th></tr></thead>
           <tbody>
-            <tr><td>キーワード</td><td>タイトルとメモで絞り込みます。</td></tr>
-            <tr><td>優先度</td><td>低・中・高、またはすべてを表示します。</td></tr>
-            <tr><td>自動順／手動順</td><td>状態・優先度による自動整列、またはドラッグ順を切り替えます。</td></tr>
-            <tr><td>Todo一覧の＋</td><td>タイトル、親Todo、状態、優先度、セクションを指定して追加します。</td></tr>
-            <tr><td>完了済みTodoを表示</td><td>完了済みの項目を展開します。</td></tr>
-            <tr><td>詳細の鉛筆／ごみ箱</td><td>選択中Todoを編集／削除します。</td></tr>
-            <tr><td>状態プルダウン</td><td>未着手、進行中、完了などへ変更します。</td></tr>
-            <tr><td>B／T／パレット／画像</td><td>メモの太字、文字サイズ、文字色、画像挿入を行います。</td></tr>
-            <tr><td>DBアイコン</td><td>ゲームDBレコードを参照チップとしてメモへ挿入します。</td></tr>
-            <tr><td>チェックリスト欄の＋</td><td>ゲームDBのチェックリストをTodoへ紐づけます。</td></tr>
+            <tr><td>1</td><td>キーワード</td><td>タイトルとメモで絞り込みます。</td></tr>
+            <tr><td>1</td><td>優先度</td><td>低・中・高、またはすべてを表示します。</td></tr>
+            <tr><td>1</td><td>自動順／手動順</td><td>状態・優先度による自動整列、またはドラッグ順を切り替えます。</td></tr>
+            <tr><td>2</td><td>Todo一覧の＋</td><td>タイトル、親Todo、状態、優先度、セクションを指定して追加します。</td></tr>
+            <tr><td>－</td><td>完了済みTodoを表示</td><td>完了済みの項目を展開します。</td></tr>
+            <tr><td>3</td><td>詳細の鉛筆／ごみ箱</td><td>選択中Todoを編集／削除します。</td></tr>
+            <tr><td>－</td><td>状態プルダウン</td><td>未着手、進行中、完了などへ変更します。</td></tr>
+            <tr><td>4</td><td>B／T／パレット／画像</td><td>メモの太字、文字サイズ、文字色、画像挿入を行います。</td></tr>
+            <tr><td>4</td><td>DBアイコン</td><td>ゲームDBレコードを参照チップとしてメモへ挿入します。</td></tr>
+            <tr><td>5</td><td>チェックリスト欄の＋</td><td>ゲームDBのチェックリストをTodoへ紐づけます。</td></tr>
           </tbody>
         </table>
       </section>
@@ -252,26 +270,113 @@
 
       <section id="settings">
         <h2>8. 設定・OBS・データ</h2>
+        <p>左サイドバー下部の歯車から設定を開き、上部のタブで設定の種類を切り替えます。</p>
         <table class="button-reference">
           <thead><tr><th>設定タブ</th><th>内容</th></tr></thead>
           <tbody>
             <tr><td>外観</td><td>テーマや表示密度などを変更します。</td></tr>
             <tr><td>データ</td><td>バックアップ保存と復元を行います。</td></tr>
-            <tr><td>Todo</td><td>Todoの表示項目や履歴表示を変更します。</td></tr>
+            <tr><td>Todo</td><td>チェックリスト完了時の自動完了と、レベル進捗表示を変更します。</td></tr>
             <tr><td>ショートカット</td><td>チャート実行用のグローバルキーを変更します。</td></tr>
-            <tr><td>連携</td><td>外部制御APIの有効化、ポート、トークンを管理します。</td></tr>
-            <tr><td>OBS</td><td>Todo／Chart OBS URL、表示内容、レイアウト、プレビューを設定します。</td></tr>
+            <tr><td>連携</td><td>外部制御APIと、OBS Studioへ登録するTodo／Chart URLを確認します。</td></tr>
+            <tr><td>OBS</td><td>Todo／Chartの表示内容、レイアウト、テーマ、プレビューを設定します。</td></tr>
           </tbody>
         </table>
-        <h3>OBSへ表示する</h3>
+
+        <h3 id="settings-data">データ: バックアップと復元</h3>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-settings-data">
+            <img src="assets/manual/manual-settings-data.png" alt="設定のデータタブと復元確認" />
+            <svg class="callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="30" y1="17" x2="24.5" y2="22.5" />
+              <line x1="8" y1="43" x2="14" y2="44" />
+              <line x1="43" y1="43" x2="38.5" y2="44" />
+              <line x1="8" y1="65" x2="15" y2="61.5" />
+            </svg>
+            <span class="callout-marker" style="left: 30%; top: 17%">1</span>
+            <span class="callout-marker" style="left: 8%; top: 43%">2</span>
+            <span class="callout-marker" style="left: 43%; top: 43%">3</span>
+            <span class="callout-marker" style="left: 8%; top: 65%">4</span>
+          </div>
+          <figcaption>設定 → データ。<a href="assets/manual/manual-settings-data.png">画像を別画面で開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>場所・ボタン</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>データタブ</td><td>ローカルデータのバックアップと復元を開きます。</td></tr>
+            <tr><td>2</td><td>バックアップを保存</td><td>ゲーム、Todo、チャート、ゲームDB、画像・添付資産を<code>.ysroute-backup</code>へ保存します。</td></tr>
+            <tr><td>3</td><td>バックアップから復元</td><td>復元内容と再起動に関する確認欄を表示します。</td></tr>
+            <tr><td>4</td><td>ファイルを選んで復元</td><td>バックアップを検証し、現在のローカルデータを置き換えます。</td></tr>
+          </tbody>
+        </table>
+        <p>ログイン情報、外部制御トークン、クラウド上のアカウント・XP・進捗は含まれません。復元前データは自動退避され、復元成功後にアプリが再起動します。</p>
+
+        <h3 id="settings-obs">OBSへ表示する</h3>
         <ol>
-          <li><code>設定</code>→<code>OBS</code>でTodoまたはChartのURLをコピーします。</li>
+          <li><code>設定</code>→<code>連携</code>の<code>OBS URL</code>で、TodoまたはChartのURLをコピーします。</li>
           <li>OBS Studioでブラウザソースを追加し、URLを貼り付けます。</li>
-          <li>Y'sRouteで対象ゲーム／チャートを選び、表示設定とプレビューを確認して保存します。</li>
+          <li>Y'sRouteで対象ゲーム／チャートを選びます。</li>
+          <li><code>設定</code>→<code>OBS</code>で表示設定とプレビューを確認し、TodoとChartをそれぞれ保存します。</li>
         </ol>
         <p>OBSページはY'sRoute起動中だけ利用できるローカルURLです。既定ポートは39080です。</p>
-        <h3>バックアップと復元</h3>
-        <p><code>設定</code>→<code>データ</code>から<code>.ysroute-backup</code>を保存・復元します。更新前、端末移行前、大きな編集前に保存してください。</p>
+
+        <h3 id="settings-todo-obs">Todo OBS設定</h3>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-settings-obs-todo">
+            <img src="assets/manual/manual-settings-obs-todo.png" alt="Todo OBS設定とプレビュー" />
+            <svg class="callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="50" y1="15" x2="45" y2="20" />
+              <line x1="88" y1="29" x2="85.5" y2="32" />
+              <line x1="10" y1="55" x2="14" y2="55" />
+              <line x1="84" y1="47" x2="78" y2="47" />
+            </svg>
+            <span class="callout-marker" style="left: 50%; top: 15%">1</span>
+            <span class="callout-marker" style="left: 88%; top: 29%">2</span>
+            <span class="callout-marker" style="left: 10%; top: 55%">3</span>
+            <span class="callout-marker" style="left: 84%; top: 47%">4</span>
+          </div>
+          <figcaption>設定 → OBS → Todo OBS設定。下へスクロールすると残りの表示設定があります。<a href="assets/manual/manual-settings-obs-todo.png">画像を別画面で開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>場所・ボタン</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>OBSタブ</td><td>Todo／Chartの表示設定とプレビューを開きます。</td></tr>
+            <tr><td>2</td><td>保存</td><td>選択中ゲームのTodo OBS設定を保存します。</td></tr>
+            <tr><td>3</td><td>表示設定</td><td>完了済みTodo、背景透過、アイコン、タイトル、履歴、チェックリスト進捗などの表示を切り替えます。</td></tr>
+            <tr><td>4</td><td>Todo OBSプレビュー</td><td>OBS Studioへ反映される見た目を保存前に確認します。</td></tr>
+          </tbody>
+        </table>
+        <p>さらに、完了時のスライド方向、長いタイトルの表示方法、フォント／余白プリセット、フォント倍率、テーマを設定できます。</p>
+
+        <h3 id="settings-chart-obs">Chart OBS設定</h3>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-settings-obs-chart">
+            <img src="assets/manual/manual-settings-obs-chart.png" alt="Chart OBS設定とプレビュー" />
+            <svg class="callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="52" y1="25" x2="47" y2="29" />
+              <line x1="10" y1="45" x2="14" y2="45" />
+              <line x1="52" y1="68" x2="47" y2="70" />
+              <line x1="84" y1="32" x2="78" y2="32" />
+              <line x1="90" y1="13" x2="85.5" y2="15" />
+            </svg>
+            <span class="callout-marker" style="left: 52%; top: 25%">1</span>
+            <span class="callout-marker" style="left: 10%; top: 45%">2</span>
+            <span class="callout-marker" style="left: 52%; top: 68%">3</span>
+            <span class="callout-marker" style="left: 84%; top: 32%">4</span>
+            <span class="callout-marker" style="left: 90%; top: 13%">5</span>
+          </div>
+          <figcaption>設定 → OBS → Chart OBS設定。<a href="assets/manual/manual-settings-obs-chart.png">画像を別画面で開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>場所・ボタン</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>表示モード／プレビューサンプル</td><td>OBSの表示形式と、実行中・完了時などの確認状態を選びます。</td></tr>
+            <tr><td>2</td><td>基本表示設定</td><td>タイマー、完了済み手順、背景透過、ゲームアイコン・タイトルを切り替えます。</td></tr>
+            <tr><td>3</td><td>OBS部品</td><td>ゲーム見出し、チャートタイトル、進捗バー、一覧、タイマーなどの表示・順序・大きさを設定します。</td></tr>
+            <tr><td>4</td><td>Chart OBSプレビュー</td><td>選択した部品構成とテーマの見た目を確認します。</td></tr>
+            <tr><td>5</td><td>保存</td><td>選択中チャートのChart OBS設定を保存します。</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <section id="update">
