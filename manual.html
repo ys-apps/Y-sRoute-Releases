@@ -3,190 +3,256 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>詳細マニュアル | Y'sRoute</title>
+    <title>ユーザーマニュアル | Y'sRoute</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <p>Y'sRoute Manual</p>
-      <h1>詳細マニュアル</h1>
+      <h1>ユーザーマニュアル</h1>
+      <p class="hero-lead">画面ごとの役割、ボタン、ゲームDB連携、ショートカットを説明します。</p>
       <nav class="manual-nav">
-        <a href="index.html">公式案内</a
-        ><a href="quick-start.html">クイックスタート</a
+        <a href="index.html">公式案内</a><a href="quick-start.html">クイックスタート</a
         ><a href="faq.html">FAQ</a><a href="known-issues.html">既知の問題</a>
       </nav>
     </header>
     <main>
-      <section>
-        <h2>動作環境</h2>
-        <p>
-          Windows 11 Home / Pro
-          24H2以降のx64、4GB以上のメモリ、1366×768以上の画面を対象とします。Windows
-          10、Windows on Arm、32bit
-          Windows、macOS、Linuxは初回リリースのサポート対象外です。OBS連携を使う場合のみOBS
-          Studioが別途必要です。
-        </p>
-      </section>
-      <section>
-        <h2>インストールと初回起動</h2>
+      <section class="card toc">
+        <h2>目次</h2>
         <ol>
-          <li>
-            公式案内ページで版、公開日、SHA-256を確認し、バージョン固定URLからインストーラーを取得します。
-          </li>
-          <li>
-            <code>Get-FileHash &lt;ファイルパス&gt; -Algorithm SHA256</code
-            >で一致を確認します。
-          </li>
-          <li>
-            インストーラーを起動し、通常は利用者単位でインストールします。
-          </li>
-          <li>未署名警告は、配布元とSHA-256を確認できた場合だけ進めます。</li>
-          <li>
-            <code>Y'sRoute</code
-            >を起動します。ログインせずに主要なローカル機能を利用できます。
-          </li>
+          <li><a href="#install">インストール・ログイン</a></li>
+          <li><a href="#navigation">共通画面とゲーム</a></li>
+          <li><a href="#todo">Todo</a></li>
+          <li><a href="#chart">チャート</a></li>
+          <li><a href="#database">ゲームDB</a></li>
+          <li><a href="#database-link">ゲームDBをTodo／チャートへ紐づける</a></li>
+          <li><a href="#shortcut">ショートカット</a></li>
+          <li><a href="#settings">設定・OBS・データ</a></li>
+          <li><a href="#update">更新・アンインストール</a></li>
         </ol>
       </section>
-      <section>
-        <h2>ログインとログアウト</h2>
+
+      <section id="install">
+        <h2>1. インストール・初回起動・ログイン</h2>
         <ol>
-          <li>サイドバー左下の人型アイコンを押します。</li>
-          <li>
-            <code>ユーザー情報とログイン</code
-            >で<code>Googleでログイン</code>を押し、ブラウザで認証を完了します。
-          </li>
-          <li>ログアウトは同じ画面のアカウント管理欄から行います。</li>
+          <li>公式案内ページで版、公開日、SHA-256を確認し、インストーラーを取得します。</li>
+          <li><code>Get-FileHash &lt;ファイルパス&gt; -Algorithm SHA256</code>で公開値と一致することを確認します。</li>
+          <li>インストーラーを起動し、通常は利用者単位でインストールします。</li>
+          <li>Y'sRouteを起動します。初回起動時にローカルDBが自動作成されます。</li>
         </ol>
-        <p>
-          認証、アカウント進捗・XP連携にはオンライン接続が必要です。認証に失敗してもローカル機能は利用できます。
-        </p>
+        <p>ログインしなくても主要機能を利用できます。ログインする場合は左下の人型アイコンから<code>Googleでログイン</code>を選びます。</p>
       </section>
-      <section>
-        <h2>ゲーム</h2>
+
+      <section id="navigation">
+        <h2>2. 共通画面とゲーム</h2>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-game-todo">
+            <img src="assets/manual/quick-start-todo.png" alt="ゲームとTodo画面の操作位置" />
+            <span class="callout-marker" style="left: 96%; top: 7%">1</span>
+            <span class="callout-marker" style="left: 92%; top: 20%">2</span>
+            <span class="callout-marker" style="left: 24%; top: 31%">3</span>
+            <span class="callout-marker" style="left: 18%; top: 43%">4</span>
+            <span class="callout-marker" style="left: 52%; top: 69%">5</span>
+          </div>
+          <figcaption>番号は下の表と対応します。<a href="assets/manual/quick-start-todo.png">全体画像を開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>場所・ボタン</th><th>できること</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>ゲーム欄の＋</td><td>新しいゲームを追加します。</td></tr>
+            <tr><td>2</td><td>鉛筆／ごみ箱／全画面</td><td>選択中ゲームの編集、削除、ゲーム一覧の展開を行います。</td></tr>
+            <tr><td>3</td><td>Todo／チャート／ゲームDB</td><td>選択中ゲーム内の機能を切り替えます。</td></tr>
+            <tr><td>4</td><td>歯車</td><td>現在の機能の管理画面を開きます。</td></tr>
+            <tr><td>5</td><td>各一覧の＋</td><td>Todo、チャート、DB、レコードなどを追加します。</td></tr>
+          </tbody>
+        </table>
+        <h3>左サイドバー</h3>
+        <table class="button-reference">
+          <thead><tr><th>アイコン</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>Todo／Chart／DB</td><td>現在表示しているゲーム機能を示します。</td></tr>
+            <tr><td>最近使った項目</td><td>最近開いたゲーム、Todo、チャートと作業ログを表示します。</td></tr>
+            <tr><td>本</td><td>このオンラインマニュアルを開きます。</td></tr>
+            <tr><td>文書</td><td>プライバシー、利用規約、ライセンスを開きます。</td></tr>
+            <tr><td>人</td><td>ログイン、ログアウト、アカウント管理を開きます。</td></tr>
+            <tr><td>歯車</td><td>外観、データ、Todo、ショートカット、連携、OBSの設定を開きます。</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="todo">
+        <h2>3. Todo画面</h2>
+        <table class="button-reference">
+          <thead><tr><th>場所・ボタン</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>キーワード</td><td>タイトルとメモで絞り込みます。</td></tr>
+            <tr><td>優先度</td><td>低・中・高、またはすべてを表示します。</td></tr>
+            <tr><td>自動順／手動順</td><td>状態・優先度による自動整列、またはドラッグ順を切り替えます。</td></tr>
+            <tr><td>Todo一覧の＋</td><td>タイトル、親Todo、状態、優先度、セクションを指定して追加します。</td></tr>
+            <tr><td>完了済みTodoを表示</td><td>完了済みの項目を展開します。</td></tr>
+            <tr><td>詳細の鉛筆／ごみ箱</td><td>選択中Todoを編集／削除します。</td></tr>
+            <tr><td>状態プルダウン</td><td>未着手、進行中、完了などへ変更します。</td></tr>
+            <tr><td>B／T／パレット／画像</td><td>メモの太字、文字サイズ、文字色、画像挿入を行います。</td></tr>
+            <tr><td>DBアイコン</td><td>ゲームDBレコードを参照チップとしてメモへ挿入します。</td></tr>
+            <tr><td>チェックリスト欄の＋</td><td>ゲームDBのチェックリストをTodoへ紐づけます。</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="chart">
+        <h2>4. チャート画面</h2>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-chart">
+            <img src="assets/manual/quick-start-chart.png" alt="チャート実行画面の操作位置" />
+            <span class="callout-marker" style="left: 91%; top: 12%">1</span>
+            <span class="callout-marker" style="left: 25%; top: 29%">2</span>
+            <span class="callout-marker" style="left: 14%; top: 58%">3</span>
+            <span class="callout-marker" style="left: 8%; top: 91%">4</span>
+          </div>
+          <figcaption>チャート実行時の主要操作。<a href="assets/manual/quick-start-chart.png">全体画像を開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号／ボタン</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>1 歯車／鉛筆</td><td>セクション・CSV・履歴管理、またはチャート編集を開きます。</td></tr>
+            <tr><td>2 チャート選択</td><td>実行・編集するチャートを切り替えます。＋で新規作成します。</td></tr>
+            <tr><td>3 比較対象</td><td>自己ベスト、前回、平均、目標、ベスト区間合計を切り替えます。</td></tr>
+            <tr><td>4 タイマー</td><td>一時停止／再開と中止を行います。</td></tr>
+            <tr><td>記録</td><td>現在手順を完了として記録し、次の手順へ進みます。</td></tr>
+            <tr><td>練習開始／終了ステップ</td><td>チャート全体ではなく指定区間だけを練習します。</td></tr>
+            <tr><td>現在セクション／周辺ステップ</td><td>実行中に表示する手順範囲を切り替えます。</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="database">
+        <h2>5. ゲームDB画面</h2>
+        <p>ゲームDBは、攻略情報、装備、収集物、ルート候補などを自由な項目で管理する機能です。左から「DB」「レコード一覧」「レコード編集」の3列で操作します。</p>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-database">
+            <img src="assets/manual/manual-game-database.png" alt="ゲームDB画面の操作位置" />
+            <span class="callout-marker" style="left: 21%; top: 23%">1</span>
+            <span class="callout-marker" style="left: 21%; top: 39%">2</span>
+            <span class="callout-marker" style="left: 54%; top: 23%">3</span>
+            <span class="callout-marker" style="left: 89%; top: 23%">4</span>
+            <span class="callout-marker" style="left: 69%; top: 64%">5</span>
+          </div>
+          <figcaption>必要な範囲だけを拡大しています。<a href="assets/manual/manual-game-database.png">全体画像を開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>ボタン</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>DB欄の＋</td><td>DB名、説明、アイコン、レベル設定を指定してDBを追加します。</td></tr>
+            <tr><td>2</td><td>DBメニュー</td><td>DB設定とチェックリスト管理を開きます。DB設定では項目の型、必須、コピー用、一覧表示を設定します。</td></tr>
+            <tr><td>3</td><td>レコード欄の＋</td><td>選択中DBへレコードを追加します。</td></tr>
+            <tr><td>4</td><td>お気に入り／ロック／複製／削除</td><td>選択中レコードの状態と複製・削除を操作します。</td></tr>
+            <tr><td>5</td><td>詳細ツールバー</td><td>太字、文字サイズ、文字色、画像、DB参照をレコード詳細へ挿入します。</td></tr>
+            <tr><td>歯車</td><td>管理・保守</td><td>CSV入出力、バックアップ、表示プリセットなどを管理します。</td></tr>
+          </tbody>
+        </table>
+        <h3>レコード下部の補助情報</h3>
         <ul>
-          <li>
-            画面上部の<code>＋</code>（ゲームを追加）からゲームを登録します。
-          </li>
-          <li>ゲームカードで選択し、編集、削除、並び替えを行います。</li>
-          <li>Todo、チャート、ゲームDBは選択中ゲームごとに切り替わります。</li>
+          <li><strong>添付:</strong> レコードにファイルを保存します。</li>
+          <li><strong>関連:</strong> 別レコードとの関係を登録します。</li>
+          <li><strong>履歴:</strong> レコードの変更履歴を確認します。</li>
+          <li><strong>バージョン:</strong> 名前付き保存版を作成し、後から復元します。</li>
         </ul>
       </section>
-      <section>
-        <h2>Todo</h2>
-        <ul>
-          <li>
-            <code>Todo</code
-            >タブの<code>＋</code>からタイトル、詳細、親Todo、状態、優先度、セクションを登録します。
-          </li>
-          <li>Todoカードで詳細を開き、編集、状態変更、削除を行います。</li>
-          <li>
-            キーワードと優先度で絞り込み、<code>自動順</code>または<code>手動順</code>で表示します。
-          </li>
-          <li>歯車（Todo 管理）ではセクションとCSV入出力を管理します。</li>
-        </ul>
-      </section>
-      <section>
-        <h2>チャート</h2>
-        <ul>
-          <li>
-            <code>チャート</code
-            >タブの<code>＋</code>からチャートを作成し、1つ以上の手順を追加します。
-          </li>
-          <li>
-            <code>タイマー記録あり</code
-            >または<code>手順進行のみ</code>を選び、<code>チャート開始</code>を押します。
-          </li>
-          <li>
-            実行中は手順記録、一時停止・再開、中止を行えます。完走後は履歴、比較、区間分析を確認できます。
-          </li>
-          <li>歯車（チャート管理）ではセクション、CSV、履歴を管理します。</li>
-        </ul>
-      </section>
-      <section>
-        <h2>ゲームDB</h2>
-        <ul>
-          <li>
-            <code>ゲームDB</code
-            >タブでDBを追加し、任意フィールドとレコードを登録します。
-          </li>
-          <li>
-            レコードにはリッチテキスト、画像・添付、別レコード参照、履歴・版を設定できます。
-          </li>
-          <li>
-            DB行のメニューからチェックリストを作成し、Todoへ関連付けられます。
-          </li>
-          <li>
-            管理・保守、一括操作、CSV入出力は対象を確認してから実行してください。
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>OBS</h2>
+
+      <section id="database-link">
+        <h2>6. ゲームDBをTodo／チャートへ紐づける</h2>
+        <h3>方法A: DBチェックリストをTodoへ紐づける</h3>
         <ol>
-          <li>
-            サイドバーの歯車から<code>設定</code>を開き、<code>OBS</code>タブを選びます。
-          </li>
-          <li>
-            <code>Todo OBS URL</code>または<code>Chart OBS URL</code
-            >をコピーします。
-          </li>
-          <li>OBS Studioのブラウザソースへ貼り付けます。</li>
-          <li>
-            Y'sRoute側で対象ゲーム／チャートを選び、表示設定とプレビューを確認して保存します。
-          </li>
+          <li><code>ゲームDB</code>でDBとレコードを作成します。</li>
+          <li>DB行のメニューから<code>チェックリスト</code>を開き、名前を入力して<code>チェックリスト作成</code>を押します。</li>
+          <li><code>Todo</code>で紐づけ先Todoを選び、詳細下部の<code>チェックリスト</code>欄にある＋を押します。</li>
+          <li><code>既存を紐づけ</code>でチェックリストを選び、<code>紐づけ</code>を押します。</li>
+          <li>必要なら一覧を展開し、<code>サブTodo作成</code>で未チェック項目または全レコードをサブTodoにします。</li>
         </ol>
-        <p>
-          OBSページはY'sRoute起動中だけ利用できるローカルURLです。既定ポートは39080です。
-        </p>
-      </section>
-      <section>
-        <h2>バックアップと復元</h2>
-        <h3>保存</h3>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-checklist">
+            <img src="assets/manual/manual-todo-checklist.png" alt="TodoとゲームDBチェックリストの紐づけ位置" />
+            <span class="callout-marker" style="left: 95%; top: 51%">1</span>
+            <span class="callout-marker" style="left: 58%; top: 77%">2</span>
+            <span class="callout-marker" style="left: 90%; top: 83%">3</span>
+          </div>
+          <figcaption>1: 追加、2: 紐づけ済みチェックリスト、3: 解除。<a href="assets/manual/manual-todo-checklist.png">全体画像を開く</a></figcaption>
+        </figure>
+        <div class="card warning"><p><strong>解除</strong>はTodoとの関連だけを外します。元DB、チェックリスト、レコードは削除しません。</p></div>
+
+        <h3>方法B: DBレコードを本文へ参照チップとして挿入する</h3>
         <ol>
-          <li><code>設定</code>→<code>データ</code>を開きます。</li>
-          <li>
-            <code>バックアップを保存</code
-            >を押し、<code>.ysroute-backup</code>を保存します。
-          </li>
+          <li>Todo詳細メモ、チャート手順詳細、またはゲームDBレコード詳細を開きます。</li>
+          <li>ツールバーのDBアイコン（<code>DB参照を挿入</code>）を押します。</li>
+          <li>DBとレコードを選び、必要なら全体検索で絞り込みます。</li>
+          <li>コピー対象フィールドを選んで<code>挿入</code>します。</li>
+          <li>本文内の参照チップを押すと、参照先の値を確認・コピーできます。</li>
         </ol>
-        <h3>復元</h3>
+        <p><code>最新を参照</code>はレコードの現在値を表示します。保存版を固定したい場合は参照バージョンを選びます。</p>
+      </section>
+
+      <section id="shortcut">
+        <h2>7. ショートカット</h2>
+        <p>ショートカットはグローバルです。Y'sRouteが手前にないときも、チャート実行中に操作できます。</p>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-shortcuts">
+            <img src="assets/manual/manual-shortcuts.png" alt="ショートカット設定画面" />
+            <span class="callout-marker" style="left: 27%; top: 32%">1</span>
+            <span class="callout-marker" style="left: 52%; top: 57%">2</span>
+            <span class="callout-marker" style="left: 89%; top: 57%">3</span>
+            <span class="callout-marker" style="left: 90%; top: 90%">4</span>
+          </div>
+          <figcaption>設定 → ショートカット。<a href="assets/manual/manual-shortcuts.png">全体画像を開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>操作</th><th>既定キー</th><th>動作</th></tr></thead>
+          <tbody>
+            <tr><td>記録</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd></td><td>現在手順を記録して次へ進みます。</td></tr>
+            <tr><td>一時停止／再開</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>2</kbd></td><td>実行状態を切り替えます。</td></tr>
+            <tr><td>中止</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd></td><td>現在のチャート実行を中止します。</td></tr>
+          </tbody>
+        </table>
         <ol>
-          <li>
-            <code>設定</code
-            >→<code>データ</code>→<code>バックアップから復元</code>を押します。
-          </li>
-          <li>現在データが置き換わることを確認し、ファイルを選びます。</li>
-          <li>
-            検証後にアプリが再起動します。復元前データは自動退避されます。
-          </li>
+          <li>変更するキー欄を押し、新しいキー組み合わせを入力します。</li>
+          <li>使わない操作は<code>有効</code>を外します。<code>既定値に戻す</code>で初期値へ戻せます。</li>
+          <li><code>保存</code>を押します。同じキーの重複やOS予約キーは登録できません。</li>
         </ol>
-        <p>
-          バックアップにはローカルDB、ゲーム画像、ゲームDB添付資産を含み、ログイン情報、外部制御トークン、クラウドデータは含みません。
-        </p>
       </section>
-      <section>
-        <h2>更新</h2>
-        <p>
-          アプリ内自動更新はありません。アプリ内バックアップを保存して終了し、公式案内ページで新しい版と既知の問題を確認します。新しいインストーラーのSHA-256を確認して上書きインストールし、起動後に主要データを確認してください。新しい版で更新したDBを古い版で開くダウングレードはサポートしません。
-        </p>
-      </section>
-      <section>
-        <h2>アンインストール</h2>
+
+      <section id="settings">
+        <h2>8. 設定・OBS・データ</h2>
+        <table class="button-reference">
+          <thead><tr><th>設定タブ</th><th>内容</th></tr></thead>
+          <tbody>
+            <tr><td>外観</td><td>テーマや表示密度などを変更します。</td></tr>
+            <tr><td>データ</td><td>バックアップ保存と復元を行います。</td></tr>
+            <tr><td>Todo</td><td>Todoの表示項目や履歴表示を変更します。</td></tr>
+            <tr><td>ショートカット</td><td>チャート実行用のグローバルキーを変更します。</td></tr>
+            <tr><td>連携</td><td>外部制御APIの有効化、ポート、トークンを管理します。</td></tr>
+            <tr><td>OBS</td><td>Todo／Chart OBS URL、表示内容、レイアウト、プレビューを設定します。</td></tr>
+          </tbody>
+        </table>
+        <h3>OBSへ表示する</h3>
         <ol>
-          <li>必要な場合はバックアップを保存し、Y'sRouteを終了します。</li>
-          <li>
-            Windowsの<code>設定</code>→<code>アプリ</code>→<code>インストールされているアプリ</code>から<code>Y'sRoute</code>をアンインストールします。
-          </li>
+          <li><code>設定</code>→<code>OBS</code>でTodoまたはChartのURLをコピーします。</li>
+          <li>OBS Studioでブラウザソースを追加し、URLを貼り付けます。</li>
+          <li>Y'sRouteで対象ゲーム／チャートを選び、表示設定とプレビューを確認して保存します。</li>
         </ol>
-        <p>
-          アンインストールしても<code>%LOCALAPPDATA%\Y-sRoute</code>の利用者データは自動削除されません。完全削除はバックアップ不要を確認後に手動で行います。
-        </p>
+        <p>OBSページはY'sRoute起動中だけ利用できるローカルURLです。既定ポートは39080です。</p>
+        <h3>バックアップと復元</h3>
+        <p><code>設定</code>→<code>データ</code>から<code>.ysroute-backup</code>を保存・復元します。更新前、端末移行前、大きな編集前に保存してください。</p>
       </section>
-      <section>
-        <h2>マニュアルを開く</h2>
-        <p>
-          アプリのサイドバー左下にある本のアイコン（ユーザーマニュアル）、または公式案内ページのマニュアルリンクから開けます。
-        </p>
+
+      <section id="update">
+        <h2>9. 更新・アンインストール</h2>
+        <h3>更新</h3>
+        <ol>
+          <li>バックアップを保存してY'sRouteを終了します。</li>
+          <li>公式案内で新しい版、既知の問題、SHA-256を確認します。</li>
+          <li>新しいインストーラーを上書きインストールし、主要データを確認します。</li>
+        </ol>
+        <h3>アンインストール</h3>
+        <p>Windowsの<code>設定</code>→<code>アプリ</code>→<code>インストールされているアプリ</code>から削除します。利用者データは<code>%LOCALAPPDATA%\Y-sRoute</code>に残るため、完全削除時だけバックアップ不要を確認して手動削除します。</p>
       </section>
     </main>
     <footer>公開主体: Y's<br />最終更新: 2026-07-19</footer>

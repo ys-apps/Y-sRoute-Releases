@@ -3,8 +3,8 @@
 このリポジトリは、Y'sが提供するWindowsデスクトップアプリ **Y'sRoute** の利用者向け情報を公開するためのリポジトリです。
 
 - [公式案内ページ](https://ys-apps.github.io/Y-sRoute-Releases/)
-- [画像付きクイックスタート](https://ys-apps.github.io/Y-sRoute-Releases/quick-start.html)
-- [詳細マニュアル](https://ys-apps.github.io/Y-sRoute-Releases/manual.html)
+- [クイックスタート](https://ys-apps.github.io/Y-sRoute-Releases/quick-start.html)
+- [ユーザーマニュアル](https://ys-apps.github.io/Y-sRoute-Releases/manual.html)
 - [FAQ](https://ys-apps.github.io/Y-sRoute-Releases/faq.html)
 - [既知の問題](https://ys-apps.github.io/Y-sRoute-Releases/known-issues.html)
 - [プライバシーポリシー](https://ys-apps.github.io/Y-sRoute-Releases/privacy.html)

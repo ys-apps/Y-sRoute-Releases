@@ -149,3 +149,122 @@ li + li {
 .success {
   border-left: 4px solid #55c28a;
 }
+.toc h2 {
+  margin-top: 0;
+}
+.button-reference {
+  display: table;
+  margin: 18px 0 28px;
+}
+.button-reference th:first-child,
+.button-reference td:first-child {
+  white-space: nowrap;
+}
+.annotated-figure {
+  margin: 20px 0 30px;
+}
+.annotated-figure figcaption {
+  margin-top: 10px;
+  color: #c9bbc5;
+  font-size: 0.92rem;
+}
+.focus-frame {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #665162;
+  border-radius: 12px;
+  background: #f5f7fa;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+.focus-frame img {
+  position: absolute;
+  max-width: none;
+  height: auto;
+}
+.focus-game-todo {
+  aspect-ratio: 2.65 / 1;
+}
+.focus-initial {
+  aspect-ratio: 2.25 / 1;
+}
+.focus-initial img {
+  width: 110%;
+  left: -6%;
+  top: -3%;
+}
+.focus-game-todo img {
+  width: 110%;
+  left: -6%;
+  top: -4%;
+}
+.focus-chart {
+  aspect-ratio: 1.86 / 1;
+}
+.focus-chart img {
+  width: 110%;
+  left: -6%;
+  top: -22%;
+}
+.focus-database {
+  aspect-ratio: 2.02 / 1;
+}
+.focus-database img {
+  width: 110%;
+  left: -6%;
+  top: -24%;
+}
+.focus-checklist {
+  aspect-ratio: 1.15 / 1;
+}
+.focus-checklist img {
+  width: 235%;
+  left: -128%;
+  top: -43%;
+}
+.focus-shortcuts {
+  aspect-ratio: 2.16 / 1;
+}
+.focus-shortcuts img {
+  width: 132%;
+  left: -16%;
+  top: -8%;
+}
+.callout-marker {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  transform: translate(-50%, -50%);
+  border: 3px solid #fff;
+  border-radius: 999px;
+  background: #e6007e;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+}
+kbd {
+  display: inline-block;
+  min-width: 1.8em;
+  padding: 0.08em 0.4em;
+  border: 1px solid #6d5b69;
+  border-bottom-width: 3px;
+  border-radius: 5px;
+  background: #30242f;
+  text-align: center;
+  font: inherit;
+}
+@media (max-width: 640px) {
+  .button-reference {
+    display: block;
+  }
+  .callout-marker {
+    width: 28px;
+    height: 28px;
+    border-width: 2px;
+    font-size: 0.82rem;
+  }
+}
