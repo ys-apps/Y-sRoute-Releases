@@ -178,61 +178,29 @@ li + li {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 .focus-frame img {
-  position: absolute;
-  max-width: none;
+  display: block;
+  position: static;
+  width: 100%;
+  max-width: 100%;
   height: auto;
 }
-.focus-game-todo {
-  aspect-ratio: 2.65 / 1;
+.callout-lines {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
 }
-.focus-initial {
-  aspect-ratio: 2.25 / 1;
-}
-.focus-initial img {
-  width: 110%;
-  left: -6%;
-  top: -3%;
-}
-.focus-game-todo img {
-  width: 110%;
-  left: -6%;
-  top: -4%;
-}
-.focus-chart {
-  aspect-ratio: 1.86 / 1;
-}
-.focus-chart img {
-  width: 110%;
-  left: -6%;
-  top: -22%;
-}
-.focus-database {
-  aspect-ratio: 2.02 / 1;
-}
-.focus-database img {
-  width: 110%;
-  left: -6%;
-  top: -24%;
-}
-.focus-checklist {
-  aspect-ratio: 1.15 / 1;
-}
-.focus-checklist img {
-  width: 235%;
-  left: -128%;
-  top: -43%;
-}
-.focus-shortcuts {
-  aspect-ratio: 2.16 / 1;
-}
-.focus-shortcuts img {
-  width: 132%;
-  left: -16%;
-  top: -8%;
+.callout-lines line {
+  stroke: #e6007e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+  filter: drop-shadow(0 0 1px #fff);
 }
 .callout-marker {
-  --line-length: 0px;
-  --line-angle: 0deg;
   position: absolute;
   z-index: 2;
   display: grid;
@@ -247,19 +215,6 @@ li + li {
   font-weight: 800;
   line-height: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
-}
-.callout-marker::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: calc(50% - 1px);
-  width: max(0px, calc(var(--line-length) - 40px));
-  height: 3px;
-  border-radius: 999px;
-  background: #e6007e;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.95);
-  transform: rotate(var(--line-angle)) translateX(18px);
-  transform-origin: left center;
 }
 kbd {
   display: inline-block;
@@ -276,10 +231,13 @@ kbd {
   .button-reference {
     display: block;
   }
+  .callout-lines line {
+    stroke-width: 2;
+  }
   .callout-marker {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     border-width: 2px;
-    font-size: 0.82rem;
+    font-size: 0.7rem;
   }
 }
