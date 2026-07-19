@@ -168,12 +168,16 @@
               <line x1="48" y1="24" x2="53" y2="29" />
               <line x1="76" y1="24" x2="84" y2="29" />
               <line x1="54" y1="57" x2="58.5" y2="62" />
+              <line x1="76" y1="48" x2="69" y2="53" />
+              <line x1="89" y1="14" x2="94.5" y2="19.5" />
             </svg>
             <span class="callout-marker" style="left: 18%; top: 24%">1</span>
             <span class="callout-marker" style="left: 17%; top: 41%">2</span>
             <span class="callout-marker" style="left: 48%; top: 24%">3</span>
             <span class="callout-marker" style="left: 76%; top: 24%">4</span>
             <span class="callout-marker" style="left: 54%; top: 57%">5</span>
+            <span class="callout-marker" style="left: 76%; top: 48%">6</span>
+            <span class="callout-marker" style="left: 89%; top: 14%">7</span>
           </div>
           <figcaption>画面全体を表示しています。<a href="assets/manual/manual-game-database.png">画像を別画面で開く</a></figcaption>
         </figure>
@@ -185,9 +189,78 @@
             <tr><td>3</td><td>レコード欄の＋</td><td>選択中DBへレコードを追加します。</td></tr>
             <tr><td>4</td><td>お気に入り／ロック／複製／削除</td><td>選択中レコードの状態と複製・削除を操作します。</td></tr>
             <tr><td>5</td><td>詳細ツールバー</td><td>太字、文字サイズ、文字色、画像、DB参照をレコード詳細へ挿入します。</td></tr>
+            <tr><td>6</td><td>レコードアイコン</td><td>クリップボード、画像ファイル、URLからレコードのアイコンを設定します。</td></tr>
+            <tr><td>7</td><td>ゲームDBを別ウィンドウで開く</td><td>選択中ゲームのゲームDBだけを独立したウィンドウで開きます。</td></tr>
             <tr><td>歯車</td><td>管理・保守</td><td>CSV入出力、バックアップ、表示プリセットなどを管理します。</td></tr>
           </tbody>
         </table>
+
+        <h3 id="database-settings">DBアイコンとレベル設定</h3>
+        <p>DB行のメニューから<code>DB設定</code>を開きます。アイコンやレベル設定を変更したら<code>保存</code>を押します。</p>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-database-settings">
+            <img src="assets/manual/manual-game-database-settings.png" alt="ゲームDB設定のアイコンとレベル設定" />
+            <svg class="callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="8" y1="42" x2="12.5" y2="47" />
+              <line x1="8" y1="56" x2="12.5" y2="58.5" />
+              <line x1="52" y1="57" x2="52" y2="61" />
+              <line x1="90" y1="69" x2="85" y2="73.5" />
+            </svg>
+            <span class="callout-marker" style="left: 8%; top: 42%">1</span>
+            <span class="callout-marker" style="left: 8%; top: 56%">2</span>
+            <span class="callout-marker" style="left: 52%; top: 57%">3</span>
+            <span class="callout-marker" style="left: 90%; top: 69%">4</span>
+          </div>
+          <figcaption>DB設定のアイコンとレベル管理。<a href="assets/manual/manual-game-database-settings.png">画像を別画面で開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>場所・ボタン</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>DBアイコン</td><td>左から、クリップボード貼り付け、画像ファイル選択、画像URL指定、解除を行います。画像は選択後に切り抜き位置を調整できます。</td></tr>
+            <tr><td>2</td><td>レベル管理を使う</td><td>DB内の各レコードへ現在レベルと上限レベルを持たせます。</td></tr>
+            <tr><td>3</td><td>上限設定</td><td><code>一括設定</code>は全レコードで同じ上限、<code>個別設定</code>はレコードごとに上限を設定します。一括設定時は一括上限レベルも指定します。</td></tr>
+            <tr><td>4</td><td>保存</td><td>DB名、説明、レベル設定などの変更を保存します。DBアイコンの変更は選択時点でも反映されます。</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="database-checklist">チェックリストを作成・運用する</h3>
+        <ol>
+          <li>DBへチェック対象のレコードを作成します。</li>
+          <li>DB行の<code>DBメニュー</code>から<code>チェックリスト</code>を開きます。</li>
+          <li>名前と必要なレベル設定を指定し、<code>チェックリスト作成</code>を押します。</li>
+          <li>作成後は左の一覧で対象を選び、右側で進捗、レベル、表示項目、各レコードの状態を更新します。</li>
+        </ol>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-database-checklist">
+            <img src="assets/manual/manual-game-database-checklist.png" alt="ゲームDBチェックリストの作成とレベル設定" />
+            <svg class="callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="72" y1="12" x2="77" y2="17" />
+              <line x1="7" y1="25" x2="11" y2="27" />
+              <line x1="7" y1="45" x2="10" y2="47" />
+              <line x1="51" y1="38" x2="55" y2="42" />
+              <line x1="29" y1="61" x2="34" y2="61" />
+            </svg>
+            <span class="callout-marker" style="left: 72%; top: 12%">1</span>
+            <span class="callout-marker" style="left: 7%; top: 25%">2</span>
+            <span class="callout-marker" style="left: 7%; top: 45%">3</span>
+            <span class="callout-marker" style="left: 51%; top: 38%">4</span>
+            <span class="callout-marker" style="left: 29%; top: 61%">5</span>
+          </div>
+          <figcaption>チェックリストの作成と作成後の運用画面。<a href="assets/manual/manual-game-database-checklist.png">画像を別画面で開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>場所・ボタン</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>チェックリスト作成</td><td>選択中DBの全レコードを項目にしたチェックリストを作成します。</td></tr>
+            <tr><td>2</td><td>作成時のレベル設定</td><td>レベル管理を有効にすると、チェックだけでなく各項目のレベル進捗も管理できます。</td></tr>
+            <tr><td>3</td><td>チェックリスト一覧</td><td>作成済みチェックリストと、完了数・進捗率を表示します。</td></tr>
+            <tr><td>4</td><td>別ウィンドウ／DB反映／削除</td><td>選択中チェックリストの別ウィンドウ表示、DBレコードの再反映、削除を行います。</td></tr>
+            <tr><td>5</td><td>作成後のレベル設定</td><td>設定を変更して<code>レベル設定を反映</code>を押します。個別設定では各項目の上限を個別に変更できます。</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="database-window">ゲームDBを別ウィンドウで開く</h3>
+        <p>ゲームDBタブ右端の外向き矢印（上の画面の7）を押すと、選択中ゲームのDBを独立したウィンドウで開きます。メイン画面でTodoやチャートを表示しながら、ゲームDBを横に並べて参照・編集できます。別ウィンドウを閉じてもDBやレコードは削除されません。</p>
         <h3>レコード下部の補助情報</h3>
         <ul>
           <li><strong>添付:</strong> レコードにファイルを保存します。</li>
