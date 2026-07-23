@@ -73,18 +73,75 @@
             <tr><td>5</td><td>各一覧の＋</td><td>Todo、チャート、DB、レコードなどを追加します。</td></tr>
           </tbody>
         </table>
-        <h3>左サイドバー</h3>
+        <h3>左サイドバー上部</h3>
         <table class="button-reference">
           <thead><tr><th>アイコン</th><th>説明</th></tr></thead>
           <tbody>
             <tr><td>Todo／Chart／DB</td><td>現在表示しているゲーム機能を示します。</td></tr>
             <tr><td>最近使った項目</td><td>最近開いたゲーム、Todo、チャートと作業ログを表示します。</td></tr>
-            <tr><td>本</td><td>このオンラインマニュアルを開きます。</td></tr>
-            <tr><td>文書</td><td>プライバシー、利用規約、ライセンスを開きます。</td></tr>
-            <tr><td>人</td><td>ログイン、ログアウト、アカウント管理を開きます。</td></tr>
-            <tr><td>歯車</td><td>外観、データ、Todo、ショートカット、連携、OBSの設定を開きます。</td></tr>
           </tbody>
         </table>
+
+        <h3 id="sidebar-bottom">左下メニュー</h3>
+        <p>左下には、案内文書とアカウント、アプリ設定へ移動する4つのメニューがあります。番号は上から順です。</p>
+        <figure class="annotated-figure compact-figure">
+          <div class="focus-frame">
+            <img src="assets/manual/manual-sidebar-bottom.png" alt="左下メニューの4つのアイコン" />
+            <svg class="callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="35" y1="26.5" x2="18" y2="26.5" />
+              <line x1="35" y1="45" x2="18" y2="45" />
+              <line x1="35" y1="65" x2="18" y2="65" />
+              <line x1="35" y1="84" x2="18" y2="84" />
+            </svg>
+            <span class="callout-marker" style="left: 35%; top: 26.5%">1</span>
+            <span class="callout-marker" style="left: 35%; top: 45%">2</span>
+            <span class="callout-marker" style="left: 35%; top: 65%">3</span>
+            <span class="callout-marker" style="left: 35%; top: 84%">4</span>
+          </div>
+          <figcaption>引出線はアイコンの手前で止め、操作対象へ重ならないようにしています。<a href="assets/manual/manual-sidebar-bottom.png">画像を別画面で開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>メニュー</th><th>押した後にできること</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>ユーザーマニュアル（本）</td><td>既定のWebブラウザーで、このユーザーマニュアルを開きます。操作中にアプリへ戻ってもマニュアルはブラウザー側に残ります。</td></tr>
+            <tr><td>2</td><td>公開文書（文書）</td><td>既定のWebブラウザーで公式案内ページを開きます。そこから<a href="privacy.html">プライバシーポリシー</a>、<a href="terms.html">利用規約</a>、<a href="licenses.html">第三者ライセンス</a>を確認できます。</td></tr>
+            <tr><td>3</td><td>ログイン／ユーザー情報（人）</td><td>未ログイン時はGoogleログインと利用状況、ログイン後は表示名・アイコンの変更、ログアウト、アカウント削除を行えます。詳しくは次項を参照してください。</td></tr>
+            <tr><td>4</td><td>設定（歯車）</td><td>外観、データ、Todo、ショートカット、連携、OBSの設定を開きます。各タブは<a href="#settings">「8. 設定・OBS・データ」</a>で説明します。</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="account-menu">ログイン／ユーザー情報メニュー</h3>
+        <p>ログインは任意です。ゲーム、Todo、チャート、ゲームDBなどのローカル機能は、未ログインのまま利用できます。</p>
+        <figure class="annotated-figure account-figure">
+          <div class="focus-frame">
+            <img src="assets/manual/manual-account-login.png" alt="未ログイン時のユーザー情報とログイン画面" />
+            <svg class="callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="7" y1="27" x2="10.5" y2="33" />
+              <line x1="7" y1="49" x2="10.5" y2="49" />
+              <line x1="93" y1="74" x2="90" y2="80" />
+            </svg>
+            <span class="callout-marker" style="left: 7%; top: 27%">1</span>
+            <span class="callout-marker" style="left: 7%; top: 49%">2</span>
+            <span class="callout-marker" style="left: 93%; top: 74%">3</span>
+          </div>
+          <figcaption>未ログイン時の画面。引出線は説明対象の外側で止まります。<a href="assets/manual/manual-account-login.png">画像を別画面で開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>場所・ボタン</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>ログイン状態</td><td>現在のログイン状態を表示します。未ログイン時は通常ユーザーとして利用中であることが表示されます。</td></tr>
+            <tr><td>2</td><td>アカウント全体／Y'sRouteアプリ</td><td>ログイン後、アカウント全体とY'sRoute内それぞれのレベル、総計測時間を確認できます。</td></tr>
+            <tr><td>3</td><td>Googleでログイン</td><td>既定のWebブラウザーでGoogleの本人確認を行います。認証完了後にY'sRouteへ戻ります。</td></tr>
+          </tbody>
+        </table>
+        <h4>ログイン後にできること</h4>
+        <ul>
+          <li><strong>プロフィール:</strong> Y'sRoute内で使う表示名とアカウントアイコンを変更できます。</li>
+          <li><strong>登録情報:</strong> Googleメールアドレス、ログイン方式、登録日を確認できます。GoogleメールアドレスはY'sRoute側では変更できません。</li>
+          <li><strong>ログアウト:</strong> クラウド連携を終了します。端末内のゲーム、Todo、チャート、ゲームDBは削除されません。</li>
+          <li><strong>アカウント削除:</strong> Googleで再認証し、確認文字列を入力してクラウド上のアカウントを削除します。削除しても端末内のローカルデータは残ります。</li>
+        </ul>
+        <div class="card warning"><p>アカウント削除は取り消せません。ローカルデータも削除したい場合は、必要なバックアップを確認したうえでアンインストール後に利用者データを手動削除してください。</p></div>
       </section>
 
       <section id="todo">

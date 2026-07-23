@@ -168,6 +168,12 @@ li + li {
   color: #c9bbc5;
   font-size: 0.92rem;
 }
+.compact-figure {
+  max-width: 520px;
+}
+.account-figure {
+  max-width: 900px;
+}
 .focus-frame {
   position: relative;
   width: 100%;
