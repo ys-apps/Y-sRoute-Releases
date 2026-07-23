@@ -347,12 +347,33 @@
         <table class="button-reference">
           <thead><tr><th>設定タブ</th><th>内容</th></tr></thead>
           <tbody>
-            <tr><td>外観</td><td>テーマや表示密度などを変更します。</td></tr>
-            <tr><td>データ</td><td>バックアップ保存と復元を行います。</td></tr>
-            <tr><td>Todo</td><td>チェックリスト完了時の自動完了と、レベル進捗表示を変更します。</td></tr>
-            <tr><td>ショートカット</td><td>チャート実行用のグローバルキーを変更します。</td></tr>
-            <tr><td>連携</td><td>外部制御APIと、OBS Studioへ登録するTodo／Chart URLを確認します。</td></tr>
-            <tr><td>OBS</td><td>Todo／Chartの表示内容、レイアウト、テーマ、プレビューを設定します。</td></tr>
+            <tr><td><a href="#settings-appearance">外観</a></td><td>アプリ全体のテーマを変更します。</td></tr>
+            <tr><td><a href="#settings-data">データ</a></td><td>バックアップ保存と復元を行います。</td></tr>
+            <tr><td><a href="#settings-todo">Todo</a></td><td>チェックリスト完了時の自動完了と、レベル進捗表示を変更します。</td></tr>
+            <tr><td><a href="#settings-shortcut">ショートカット</a></td><td>チャート実行用のグローバルキーを変更します。</td></tr>
+            <tr><td><a href="#settings-integration">連携</a></td><td>外部制御APIと、OBS Studioへ登録するTodo／Chart URLを確認します。</td></tr>
+            <tr><td><a href="#settings-obs">OBS</a></td><td>Todo／Chartの表示内容、レイアウト、テーマ、プレビューを設定します。</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="settings-appearance">外観タブ</h3>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-settings-appearance">
+            <img src="assets/manual/manual-settings-appearance.png" alt="設定の外観タブ" />
+            <svg class="callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="9" y1="18" x2="14" y2="22" />
+              <line x1="91" y1="27" x2="87" y2="31" />
+            </svg>
+            <span class="callout-marker" style="left: 9%; top: 18%">1</span>
+            <span class="callout-marker" style="left: 91%; top: 27%">2</span>
+          </div>
+          <figcaption>設定 → 外観。<a href="assets/manual/manual-settings-appearance.png">画像を別画面で開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>場所・項目</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>設定タブ</td><td>外観、データ、Todo、ショートカット、連携、OBSを切り替えます。</td></tr>
+            <tr><td>2</td><td>テーマ</td><td><code>Light</code>、<code>Dark</code>、OS設定に従う<code>System</code>、<code>Y's</code>からアプリ全体の配色を選びます。選択するとすぐに反映されます。</td></tr>
           </tbody>
         </table>
 
@@ -383,6 +404,65 @@
           </tbody>
         </table>
         <p>ログイン情報、外部制御トークン、クラウド上のアカウント・XP・進捗は含まれません。復元前データは自動退避され、復元成功後にアプリが再起動します。</p>
+
+        <h3 id="settings-todo">Todoタブ</h3>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-settings-todo">
+            <img src="assets/manual/manual-settings-todo.png" alt="設定のTodoタブ" />
+            <svg class="callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="33" y1="17" x2="29" y2="21" />
+              <line x1="8" y1="33" x2="13" y2="36" />
+              <line x1="8" y1="48" x2="13" y2="42.5" />
+            </svg>
+            <span class="callout-marker" style="left: 33%; top: 17%">1</span>
+            <span class="callout-marker" style="left: 8%; top: 33%">2</span>
+            <span class="callout-marker" style="left: 8%; top: 48%">3</span>
+          </div>
+          <figcaption>設定 → Todo。<a href="assets/manual/manual-settings-todo.png">画像を別画面で開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>設定</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Todoタブ</td><td>ゲームDBチェックリストとTodoの連動方法を設定します。</td></tr>
+            <tr><td>2</td><td>全完了時にTodoを自動完了</td><td>Todoへ紐づけたチェックリストの全項目が完了したとき、そのTodoも自動的に完了へ変更します。手動で状態を管理したい場合は無効にします。</td></tr>
+            <tr><td>3</td><td>レベル合計進捗を表示</td><td>レベル管理を有効にしたチェックリストについて、現在レベルの合計と上限レベルの合計をTodo一覧へ表示します。</td></tr>
+          </tbody>
+        </table>
+        <p>チェックの変更はその場で保存されます。対象Todoにチェックリストが紐づいていない場合、この設定による表示・自動完了は発生しません。</p>
+
+        <h3 id="settings-shortcut">ショートカットタブ</h3>
+        <p>チャート実行中の記録、一時停止・再開、中止に使うグローバルキーを変更します。各操作のキー入力、有効／無効、既定値への復元、保存方法は、画像付きの<a href="#shortcut">「7. ショートカット」</a>を参照してください。Y'sRouteが手前にないときも有効なため、他のアプリと重複しにくい組み合わせを設定してください。</p>
+
+        <h3 id="settings-integration">連携タブ</h3>
+        <figure class="annotated-figure">
+          <div class="focus-frame focus-settings-integration">
+            <img src="assets/manual/manual-settings-integration.png" alt="設定の連携タブとOBS URL" />
+            <svg class="callout-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="47" y1="17" x2="43" y2="21" />
+              <line x1="8" y1="34" x2="13" y2="38" />
+              <line x1="8" y1="52" x2="13" y2="46" />
+              <line x1="8" y1="62" x2="13" y2="55" />
+              <line x1="50" y1="76" x2="45" y2="70" />
+            </svg>
+            <span class="callout-marker" style="left: 47%; top: 17%">1</span>
+            <span class="callout-marker" style="left: 8%; top: 34%">2</span>
+            <span class="callout-marker" style="left: 8%; top: 52%">3</span>
+            <span class="callout-marker" style="left: 8%; top: 62%">4</span>
+            <span class="callout-marker" style="left: 50%; top: 76%">5</span>
+          </div>
+          <figcaption>設定 → 連携。操作トークンは伏せて表示されます。<a href="assets/manual/manual-settings-integration.png">画像を別画面で開く</a></figcaption>
+        </figure>
+        <table class="button-reference">
+          <thead><tr><th>番号</th><th>場所・項目</th><th>説明</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>連携タブ</td><td>外部制御APIの設定とOBS用URLを表示します。</td></tr>
+            <tr><td>2</td><td>有効／ポート／操作トークン</td><td>外部ツールからチャートを操作するローカルAPIの使用可否、待受ポート、認証用トークンを設定します。ポートは1024～65535です。</td></tr>
+            <tr><td>3</td><td>トークン生成／保存</td><td>推測されにくいトークンを生成し、外部制御API設定を保存します。トークンはパスワードと同様に扱い、公開・共有しないでください。</td></tr>
+            <tr><td>4</td><td>Server state／API URL</td><td>外部制御APIが動作中か停止中かと、接続先のローカルURLを確認します。</td></tr>
+            <tr><td>5</td><td>OBS URL</td><td>OBS Studioのブラウザソースへ登録するTodo URLとChart URLを確認します。ゲームまたはチャートを選択すると対象URLが表示されます。</td></tr>
+          </tbody>
+        </table>
+        <div class="card warning"><p>外部制御APIは必要な場合だけ有効にしてください。操作トークンを画面共有、配信、ログなどへ映さないでください。</p></div>
 
         <h3 id="settings-obs">OBSへ表示する</h3>
         <ol>
@@ -464,6 +544,6 @@
         <p>Windowsの<code>設定</code>→<code>アプリ</code>→<code>インストールされているアプリ</code>から削除します。利用者データは<code>%LOCALAPPDATA%\Y-sRoute</code>に残るため、完全削除時だけバックアップ不要を確認して手動削除します。</p>
       </section>
     </main>
-    <footer>公開主体: Y's<br />最終更新: 2026-07-19</footer>
+    <footer>公開主体: Y's<br />最終更新: 2026-07-23</footer>
   </body>
 </html>
