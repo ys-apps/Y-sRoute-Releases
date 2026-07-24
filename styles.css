@@ -149,6 +149,37 @@ li + li {
 .success {
   border-left: 4px solid #55c28a;
 }
+.release-entry {
+  margin-top: 32px;
+  padding-top: 4px;
+}
+.release-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #4b3c49;
+}
+.release-heading h2 {
+  margin-top: 0.15em;
+  border: 0;
+}
+.release-version {
+  margin-bottom: 0;
+  color: #ff79cf;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.release-status {
+  flex: 0 0 auto;
+  margin-top: 12px;
+  padding: 5px 12px;
+  border: 1px solid #f4b942;
+  border-radius: 999px;
+  color: #f8d987;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
 .toc h2 {
   margin-top: 0;
 }
@@ -234,6 +265,13 @@ kbd {
   font: inherit;
 }
 @media (max-width: 640px) {
+  .release-heading {
+    display: block;
+  }
+  .release-status {
+    display: inline-block;
+    margin: 0 0 18px;
+  }
   .button-reference {
     display: block;
   }

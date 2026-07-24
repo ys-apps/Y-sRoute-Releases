@@ -6,6 +6,7 @@
 - [クイックスタート](https://ys-apps.github.io/Y-sRoute-Releases/quick-start.html)
 - [ユーザーマニュアル](https://ys-apps.github.io/Y-sRoute-Releases/manual.html)
 - [FAQ](https://ys-apps.github.io/Y-sRoute-Releases/faq.html)
+- [リリースノート](https://ys-apps.github.io/Y-sRoute-Releases/release-notes.html)
 - [既知の問題](https://ys-apps.github.io/Y-sRoute-Releases/known-issues.html)
 - [プライバシーポリシー](https://ys-apps.github.io/Y-sRoute-Releases/privacy.html)
 - [利用規約](https://ys-apps.github.io/Y-sRoute-Releases/terms.html)
