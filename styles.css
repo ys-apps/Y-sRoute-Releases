@@ -11,6 +11,13 @@
 body {
   margin: 0;
   line-height: 1.75;
+  background:
+    radial-gradient(
+      circle at 80% 0%,
+      rgba(255, 0, 179, 0.13),
+      transparent 34rem
+    ),
+    #171317;
 }
 a {
   color: #ff79cf;
@@ -24,9 +31,44 @@ footer {
 header {
   padding: 48px 0 24px;
 }
+.hero {
+  padding-top: 72px;
+}
+.hero h1 {
+  max-width: 780px;
+  margin: 0.18em 0 0.3em;
+  font-size: clamp(2.15rem, 7vw, 4.35rem);
+  letter-spacing: -0.045em;
+}
+.eyebrow,
+.card-kicker {
+  margin-bottom: 0.25rem;
+  color: #ff79cf;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
 .hero-lead {
   max-width: 680px;
   color: #d8cad4;
+  font-size: 1.1rem;
+}
+.hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+.hero-facts li {
+  margin: 0;
+  padding: 5px 11px;
+  border: 1px solid #665162;
+  border-radius: 999px;
+  background: rgba(35, 26, 35, 0.82);
+  color: #e6d9e2;
+  font-size: 0.9rem;
 }
 .hero-actions {
   display: flex;
@@ -70,6 +112,14 @@ header {
 .hero-actions a:hover {
   filter: brightness(1.12);
 }
+.hero-actions a:focus-visible,
+.support-action:focus-visible,
+nav a:focus-visible,
+.link-grid a:focus-visible,
+.compact-links a:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
 main {
   padding-bottom: 48px;
 }
@@ -88,6 +138,18 @@ h2 {
   border-bottom: 1px solid #4b3c49;
   padding-bottom: 0.35em;
 }
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 44px;
+  border-bottom: 1px solid #4b3c49;
+}
+.section-heading h2 {
+  margin: 0 0 0.35em;
+  border: 0;
+}
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -103,6 +165,133 @@ nav {
 }
 .notice {
   border-left: 4px solid #ff00b3;
+}
+.distribution-grid,
+.release-grid,
+.feature-grid,
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.distribution-card,
+.release-card,
+.feature-grid .card {
+  margin: 0;
+}
+.distribution-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.distribution-card p:not(.card-kicker) {
+  flex-grow: 1;
+}
+.release-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 28px;
+}
+.release-card-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.release-card h3,
+.distribution-card h3,
+.feature-grid h3 {
+  margin-top: 0;
+}
+.featured-release {
+  border-color: #ff79cf;
+  box-shadow: 0 16px 44px rgba(255, 0, 179, 0.12);
+}
+.status-chip {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 3px 10px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+.status-chip.beta {
+  color: #f8d987;
+}
+.status-chip.muted-chip {
+  color: #c9bbc5;
+}
+.release-metadata {
+  margin: 18px 0 0;
+}
+.release-metadata div {
+  padding: 10px 0;
+  border-top: 1px solid #4b3c49;
+}
+.release-metadata dt {
+  color: #c9bbc5;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.release-metadata dd {
+  margin: 2px 0 0;
+  overflow-wrap: anywhere;
+}
+.inline-links,
+.compact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+.inline-links {
+  margin-top: 18px;
+}
+.disabled-action {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 9px 18px;
+  border: 1px solid #665162;
+  border-radius: 10px;
+  color: #a998a5;
+  font-weight: 700;
+}
+.store-note {
+  margin: 18px 0 0;
+}
+.feature-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.screenshot-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.screenshot-grid figure {
+  margin: 0;
+}
+.screenshot-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #4b3c49;
+  border-radius: 12px;
+  background: #f5f7fa;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+.screenshot-grid figcaption {
+  margin-top: 8px;
+  color: #c9bbc5;
+  font-size: 0.9rem;
+}
+pre {
+  overflow-x: auto;
+  padding: 14px;
+  border: 1px solid #4b3c49;
+  border-radius: 8px;
+  background: #171317;
 }
 table {
   border-collapse: collapse;
@@ -280,8 +469,21 @@ kbd {
   font: inherit;
 }
 @media (max-width: 640px) {
+  .hero {
+    padding-top: 44px;
+  }
+  .section-heading,
   .release-heading {
     display: block;
+  }
+  .section-heading .status-chip {
+    margin-bottom: 16px;
+  }
+  .distribution-grid,
+  .release-grid,
+  .feature-grid,
+  .screenshot-grid {
+    grid-template-columns: 1fr;
   }
   .release-status {
     display: inline-block;

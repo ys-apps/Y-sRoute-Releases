@@ -3,6 +3,7 @@
 このリポジトリは、Y'sが提供するWindowsデスクトップアプリ **Y'sRoute** の利用者向け情報を公開するためのリポジトリです。
 
 - [公式案内ページ](https://ys-apps.github.io/Y-sRoute-Releases/)
+- [GitHub Releases](https://github.com/ys-apps/Y-sRoute-Releases/releases)
 - [クイックスタート](https://ys-apps.github.io/Y-sRoute-Releases/quick-start.html)
 - [ユーザーマニュアル](https://ys-apps.github.io/Y-sRoute-Releases/manual.html)
 - [FAQ](https://ys-apps.github.io/Y-sRoute-Releases/faq.html)
@@ -15,4 +16,4 @@
 - [データの開示・削除手順](https://ys-apps.github.io/Y-sRoute-Releases/data-requests.html)
 - [第三者ライセンス・Electronランタイム表示](https://ys-apps.github.io/Y-sRoute-Releases/licenses.html)
 
-> 公開準備中: アカウントとクラウドデータのセルフサービス機能を実装・検証後、正式公開版へ切り替えます。
+> 配布準備中: GitHub ReleasesとBOOTHを正規配布先とし、Microsoft Storeでは配布しません。公開前のため、現在ダウンロードできる正規インストーラーはありません。
