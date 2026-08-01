@@ -52,6 +52,21 @@ header {
 .hero-actions .secondary-action {
   background: #2b202a;
 }
+.support-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 9px 18px;
+  border: 1px solid #ff79cf;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.support-action.primary-action {
+  background: #ff79cf;
+  color: #241420;
+}
 .hero-actions a:hover {
   filter: brightness(1.12);
 }
