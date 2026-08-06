@@ -73,9 +73,14 @@
             <p class="card-kicker">Mirror</p>
             <h3>BOOTH</h3>
             <p>
-              無料配布ページを準備中です。ショップURLの確定後、この公式ページに正規リンクを掲載します。
+              <code>ys-apps.booth.pm</code>
+              で無料配布する商品を準備中です。BOOTHでは、GitHub版と同一のインストーラーをZIPに格納して配布します。
             </p>
-            <span class="disabled-action" aria-disabled="true">公開準備中</span>
+            <a
+              class="support-action"
+              href="https://ys-apps.booth.pm/items/8673729"
+              >BOOTH商品ページ（公開準備中）</a
+            >
           </article>
         </div>
 
@@ -133,13 +138,24 @@
                 <dt>SHA-256</dt>
                 <dd>
                   <code
-                    >db1edb54aad45b6c251b58d59323cd3a8454d505cf59e26cab07a8d3b3850178</code
+                    >80d28d006fc2989bb3423dc53f1429779490d1a1ff476283d6003663dfa3a4ff</code
                   >
                 </dd>
               </div>
               <div>
                 <dt>ファイルサイズ</dt>
-                <dd>91,067,035 bytes</dd>
+                <dd>112,655,138 bytes</dd>
+              </div>
+              <div>
+                <dt>BOOTH配布ZIP</dt>
+                <dd>
+                  <code>Y-sRoute-Setup-0.9.0-x64.zip</code><br />
+                  112,666,620 bytes<br />
+                  SHA-256:
+                  <code
+                    >1631b644cccde9626e765e32d727acc30aece2d2998807d32b1cec31d80f4943</code
+                  >
+                </dd>
               </div>
               <div>
                 <dt>公開後の固定URL</dt>
@@ -182,11 +198,17 @@
           </p>
           <ol>
             <li>
-              このページに掲載された正規リンクからインストーラーを保存します。
+              このページに掲載された正規リンクからGitHub版EXEまたはBOOTH版ZIPを保存します。
             </li>
             <li>PowerShellで次のコマンドを実行します。</li>
           </ol>
           <pre><code>Get-FileHash -Algorithm SHA256 ".\Y-sRoute-Setup-{version}-x64.exe"</code></pre>
+          <p>
+            BOOTH版は、まずZIP自身のSHA-256を確認して展開し、続けてZIP内のEXEも同じ方法で確認してください。
+          </p>
+          <pre><code>Get-FileHash -Algorithm SHA256 ".\Y-sRoute-Setup-{version}-x64.zip"
+Expand-Archive ".\Y-sRoute-Setup-{version}-x64.zip" -DestinationPath ".\Y-sRoute-Setup-{version}-x64"
+Get-FileHash -Algorithm SHA256 ".\Y-sRoute-Setup-{version}-x64\Y-sRoute-Setup-{version}-x64.exe"</code></pre>
           <ol start="3">
             <li>
               表示されたハッシュが、このページの該当バージョンに掲載されたSHA-256と完全に一致することを確認します。

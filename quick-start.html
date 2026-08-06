@@ -27,22 +27,29 @@
         <h2>1. インストールして起動する</h2>
         <ol>
           <li>
-            公式案内ページの配布欄から最新の
-            <code>Y-sRoute-Setup-{version}-x64.exe</code> をダウンロードします。
+            公式案内ページの配布欄から、GitHub版の
+            <code>Y-sRoute-Setup-{version}-x64.exe</code> またはBOOTH版の
+            <code>Y-sRoute-Setup-{version}-x64.zip</code>
+            をダウンロードします。BOOTH版はZIPを展開します。
           </li>
           <li>
-            PowerShellで
+            PowerShellでダウンロードしたファイルに応じて
             <code
               >Get-FileHash .\Y-sRoute-Setup-{version}-x64.exe -Algorithm
               SHA256</code
             >
-            を実行し、公開されているSHA-256と一致することを確認します。
+            または
+            <code
+              >Get-FileHash .\Y-sRoute-Setup-{version}-x64.zip -Algorithm
+              SHA256</code
+            >
+            を実行し、公開されているSHA-256と一致することを確認します。BOOTH版はZIPに加えて、展開したEXEのSHA-256も確認します。
           </li>
           <li>
             インストーラーを開き、画面に従って利用者単位でインストールします。
           </li>
           <li>
-            GitHub版は署名なしです。SmartScreenが表示された場合は、配布元URLとSHA-256を確認できた場合だけ
+            GitHub版・BOOTH版のEXEは署名なしです。SmartScreenが表示された場合は、配布元URLとSHA-256を確認できた場合だけ
             <code>詳細情報</code>、<code>実行</code>の順に選択します。
           </li>
           <li>
