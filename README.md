@@ -4,7 +4,7 @@
 
 - [公式案内ページ](https://ys-apps.github.io/Y-sRoute-Releases/)
 - [GitHub Releases](https://github.com/ys-apps/Y-sRoute-Releases/releases)
-- [BOOTH商品ページ（公開準備中）](https://ys-apps.booth.pm/items/8673729)
+- [BOOTH商品ページ](https://ys-apps.booth.pm/items/8673729)
 - [クイックスタート](https://ys-apps.github.io/Y-sRoute-Releases/quick-start.html)
 - [ユーザーマニュアル](https://ys-apps.github.io/Y-sRoute-Releases/manual.html)
 - [FAQ](https://ys-apps.github.io/Y-sRoute-Releases/faq.html)
@@ -17,6 +17,6 @@
 - [データの開示・削除手順](https://ys-apps.github.io/Y-sRoute-Releases/data-requests.html)
 - [第三者ライセンス・Electronランタイム表示](https://ys-apps.github.io/Y-sRoute-Releases/licenses.html)
 
-> 配布準備中: GitHub ReleasesとBOOTHを正規配布先とし、Microsoft Storeでは配布しません。公開前のため、現在ダウンロードできる正規インストーラーはありません。
+> Version 0.9.0 公開ベータをGitHub ReleasesとBOOTHで配布しています。Microsoft Storeでは配布しません。Windows 11 24H2（build 26100）で検証済み、Windows 11 25H2は公開時点で未検証です。
 
 BOOTHでは、GitHub Releases版と同一のインストーラーをZIPに格納して配布します。商品ページにはZIP自身と格納したEXE双方のSHA-256を掲載します。
