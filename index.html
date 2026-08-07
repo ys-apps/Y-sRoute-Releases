@@ -3,92 +3,331 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Y'sRoute 公式案内</title>
+    <meta
+      name="description"
+      content="Y'sRouteの正規配布元、ダウンロード、更新履歴、マニュアル、サポートを案内する公式ページです。"
+    />
+    <title>Y'sRoute 公式案内・ダウンロード</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <p>Y'sRoute Official</p>
-      <h1>Y'sRoute 公式案内</h1>
+    <header class="hero">
+      <p class="eyebrow">Y'sRoute Official</p>
+      <h1>ゲーム攻略の道筋を、ひとつの場所へ。</h1>
       <p class="hero-lead">
-        ゲームのTodo、チャート、実行履歴、ゲームDBをまとめて管理するWindowsデスクトップアプリです。
+        Y'sRouteは、ゲームのTodo、攻略チャート、実行履歴、ゲームDBをまとめて管理できるWindowsデスクトップアプリです。
       </p>
-      <div class="hero-actions" aria-label="マニュアルへの主要リンク">
-        <a class="primary-action" href="quick-start.html"
+      <ul class="hero-facts" aria-label="製品情報">
+        <li>無料・広告なし・課金なし</li>
+        <li>Windows 11 Home / Pro 24H2以降</li>
+        <li>x64・日本語</li>
+      </ul>
+      <div class="hero-actions" aria-label="主要リンク">
+        <a class="primary-action" href="#download">配布状況を確認する</a>
+        <a class="secondary-action" href="quick-start.html"
           >最初の使い方を見る</a
         >
-        <a class="secondary-action" href="manual.html"
-          >ユーザーマニュアルを見る</a
-        >
       </div>
-      <nav>
-        <a href="quick-start.html">クイックスタート</a
+      <nav aria-label="サイト内ナビゲーション">
+        <a href="#download">ダウンロード</a
+        ><a href="release-notes.html">更新履歴</a
         ><a href="manual.html">マニュアル</a><a href="faq.html">FAQ</a
-        ><a href="release-notes.html">リリースノート</a
-        ><a href="known-issues.html">既知の問題</a>
-        <a href="privacy.html">プライバシー</a><a href="terms.html">利用規約</a
-        ><a href="disclaimer.html">免責</a
-        ><a href="data-requests.html">開示・削除</a
-        ><a href="licenses.html">ライセンス</a
-        ><a href="support.html">不具合報告・要望</a>
+        ><a href="known-issues.html">既知の問題</a
+        ><a href="terms.html">利用規約</a><a href="support.html">問い合わせ</a>
       </nav>
     </header>
+
     <main>
-      <section>
-        <h2>使い方・マニュアル</h2>
+      <section id="download" aria-labelledby="download-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Official downloads</p>
+            <h2 id="download-heading">正規配布元とダウンロード</h2>
+          </div>
+          <span class="status-chip beta">公開ベータ配布中</span>
+        </div>
+
+        <div class="card notice">
+          <h3>Version 0.9.0 公開ベータを配布中です</h3>
+          <p>
+            GitHub ReleasesとBOOTHを正規配布先として公開しています。参加登録なしでダウンロードできます。第三者サイトや非公式リンクから取得しないでください。
+          </p>
+        </div>
+
+        <div class="distribution-grid">
+          <article class="card distribution-card">
+            <p class="card-kicker">Primary</p>
+            <h3>GitHub Releases</h3>
+            <p>
+              バージョン固定HTTPS
+              URLでインストーラーとハッシュ情報を公開します。一度公開した過去版は差し替えません。
+            </p>
+            <a
+              class="support-action"
+              href="https://github.com/ys-apps/Y-sRoute-Releases/releases/download/v0.9.0/Y-sRoute-Setup-0.9.0-x64.exe"
+              >GitHub版をダウンロード</a
+            >
+          </article>
+          <article class="card distribution-card">
+            <p class="card-kicker">Mirror</p>
+            <h3>BOOTH</h3>
+            <p>
+              <code>ys-apps.booth.pm</code>
+              で無料配布する商品を準備中です。BOOTHでは、GitHub版と同一のインストーラーをZIPに格納して配布します。
+            </p>
+            <a
+              class="support-action"
+              href="https://ys-apps.booth.pm/items/8673729"
+              >BOOTH商品ページ</a
+            >
+          </article>
+        </div>
+
+        <p class="muted store-note">
+          Microsoft Storeでの配布予定はありません。GitHub
+          Releasesまたは、このページから案内するBOOTHのみを正規配布先として扱います。
+        </p>
+
+        <div class="release-grid" aria-label="バージョン別配布状況">
+          <article class="card release-card">
+            <div class="release-card-heading">
+              <div>
+                <p class="card-kicker">Latest stable</p>
+                <h3>最新版（正式版）</h3>
+              </div>
+              <span class="status-chip muted-chip">未公開</span>
+            </div>
+            <dl class="release-metadata">
+              <div>
+                <dt>バージョン</dt>
+                <dd>未公開</dd>
+              </div>
+              <div>
+                <dt>公開日</dt>
+                <dd>未定</dd>
+              </div>
+              <div>
+                <dt>SHA-256</dt>
+                <dd>配布物生成後に掲載</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="card release-card featured-release">
+            <div class="release-card-heading">
+              <div>
+                <p class="card-kicker">Public beta</p>
+                <h3>0.9.x 公開ベータ</h3>
+              </div>
+              <span class="status-chip beta">公開ベータ</span>
+            </div>
+            <p>
+              参加登録や招待は不要で、公開後は誰でも無料でダウンロードできます。正式版前のため、不具合や仕様変更が含まれる可能性があります。
+            </p>
+            <dl class="release-metadata">
+              <div>
+                <dt>バージョン</dt>
+                <dd>0.9.0</dd>
+              </div>
+              <div>
+                <dt>公開日</dt>
+                <dd>2026-08-07</dd>
+              </div>
+              <div>
+                <dt>SHA-256</dt>
+                <dd>
+                  <code
+                    >6436b5ce8773eb412586715187ce1cb9091cbd5f0d9ed7bc512b77bf3fdfc1b8</code
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>ファイルサイズ</dt>
+                <dd>112,654,623 bytes</dd>
+              </div>
+              <div>
+                <dt>BOOTH配布ZIP</dt>
+                <dd>
+                  <code>Y-sRoute-Setup-0.9.0-x64.zip</code><br />
+                  112,666,159 bytes<br />
+                  SHA-256:
+                  <code
+                    >b2f6584fd6524603998f8a4b5794732841b9d915fd6eecf2dd21049e9ff65669</code
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>公開後の固定URL</dt>
+                <dd>
+                  <code
+                    >https://github.com/ys-apps/Y-sRoute-Releases/releases/download/v0.9.0/Y-sRoute-Setup-0.9.0-x64.exe</code
+                  >
+                </dd>
+              </div>
+            </dl>
+            <div class="card warning">
+              <h4>対応環境について</h4>
+              <p>Windows 11 24H2（build 26100）で検証済みです。Windows 11 25H2は公開時点で未検証です。</p>
+            </div>
+            <div class="inline-links">
+              <a href="https://github.com/ys-apps/Y-sRoute-Releases/releases/download/v0.9.0/Y-sRoute-Setup-0.9.0-x64.exe">GitHub版をダウンロード</a>
+              <a href="known-issues.html">既知の問題を確認</a>
+              <a href="support.html">問い合わせ先を確認</a>
+              <a href="release-notes.html#v0-9-0">更新内容を確認</a>
+            </div>
+          </article>
+
+          <article class="card release-card">
+            <div class="release-card-heading">
+              <div>
+                <p class="card-kicker">Archive</p>
+                <h3>過去バージョン</h3>
+              </div>
+              <span class="status-chip muted-chip">現在なし</span>
+            </div>
+            <p>
+              公開後は、版ごとの固定URL、公開日、SHA-256を一覧化します。過去版はサポート対象外となる場合があるため、通常は最新のサポート対象版を利用してください。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="security-heading">
+        <h2 id="security-heading">安全にインストールするために</h2>
+        <div class="card warning">
+          <h3>GitHub版・BOOTH版はコード署名なしです</h3>
+          <p>
+            Windows
+            SmartScreenや「不明な発行元」の警告が表示される可能性があります。配布元URLとSHA-256が一致すると確認できた場合だけ実行してください。
+          </p>
+          <ol>
+            <li>
+              このページに掲載された正規リンクからGitHub版EXEまたはBOOTH版ZIPを保存します。
+            </li>
+            <li>PowerShellで次のコマンドを実行します。</li>
+          </ol>
+          <pre><code>Get-FileHash -Algorithm SHA256 ".\Y-sRoute-Setup-{version}-x64.exe"</code></pre>
+          <p>
+            BOOTH版は、まずZIP自身のSHA-256を確認して展開し、続けてZIP内のEXEも同じ方法で確認してください。
+          </p>
+          <pre><code>Get-FileHash -Algorithm SHA256 ".\Y-sRoute-Setup-{version}-x64.zip"
+Expand-Archive ".\Y-sRoute-Setup-{version}-x64.zip" -DestinationPath ".\Y-sRoute-Setup-{version}-x64"
+Get-FileHash -Algorithm SHA256 ".\Y-sRoute-Setup-{version}-x64\Y-sRoute-Setup-{version}-x64.exe"</code></pre>
+          <ol start="3">
+            <li>
+              表示されたハッシュが、このページの該当バージョンに掲載されたSHA-256と完全に一致することを確認します。
+            </li>
+            <li>
+              一致しない場合や確認できない場合は、ファイルを実行せず削除して<a
+                href="support.html"
+                >問い合わせ</a
+              >てください。
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section aria-labelledby="features-heading">
+        <p class="eyebrow">What you can do</p>
+        <h2 id="features-heading">攻略・計測・記録をまとめて管理</h2>
+        <div class="feature-grid">
+          <article class="card">
+            <h3>Todo</h3>
+            <p>
+              優先度、ステータス、セクション、チェックリストを使い、ゲームごとの進行を整理できます。
+            </p>
+          </article>
+          <article class="card">
+            <h3>チャートとタイマー</h3>
+            <p>
+              攻略手順を組み立て、タイマー実行、履歴、比較タイム、区間分析を記録できます。
+            </p>
+          </article>
+          <article class="card">
+            <h3>ゲームDB・OBS連携</h3>
+            <p>
+              自由な項目の攻略DBを作り、TodoやチャートをOBSのブラウザソースへ表示できます。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="screenshots-heading">
+        <p class="eyebrow">Screenshots</p>
+        <h2 id="screenshots-heading">画面イメージ</h2>
+        <div class="screenshot-grid">
+          <figure>
+            <img
+              src="assets/manual/quick-start-main.png"
+              alt="Y'sRouteのゲーム選択画面"
+              loading="lazy"
+            />
+            <figcaption>ゲームごとに情報をまとめるメイン画面</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/manual/quick-start-todo.png"
+              alt="Y'sRouteのTodo管理画面"
+              loading="lazy"
+            />
+            <figcaption>進行状況を整理できるTodo管理</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/manual/quick-start-chart.png"
+              alt="Y'sRouteのチャート実行画面"
+              loading="lazy"
+            />
+            <figcaption>攻略手順とタイムを記録するチャート</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="guide-heading">
+        <h2 id="guide-heading">ガイドとサポート</h2>
         <div class="card link-grid">
           <a href="quick-start.html"
             ><strong>クイックスタート</strong
-            ><span>インストールからゲーム、Todo、チャート実行まで</span></a
+            ><span>インストールから最初のチャート実行まで</span></a
           >
           <a href="manual.html"
             ><strong>ユーザーマニュアル</strong
-            ><span>ログイン、主要機能、OBS、更新、アンインストール</span></a
-          >
-          <a href="faq.html"
-            ><strong>FAQ</strong><span>よくある質問と解決方法</span></a
+            ><span>主要機能、OBS、更新、アンインストール</span></a
           >
           <a href="release-notes.html"
-            ><strong>リリースノート</strong
+            ><strong>更新履歴</strong
             ><span>バージョンごとの追加機能、改善、修正</span></a
           >
           <a href="known-issues.html"
             ><strong>既知の問題</strong
             ><span>公開中の問題と利用時の制約</span></a
           >
+          <a href="terms.html"
+            ><strong>利用規約</strong><span>利用前に確認する規約</span></a
+          >
+          <a href="support.html"
+            ><strong>問い合わせ</strong
+            ><span>不具合報告、要望、その他の問い合わせ</span></a
+          >
         </div>
       </section>
-      <section class="card notice">
-        <h2>公開準備状況</h2>
-        <p>
-          本ページは公開準備中です。アカウントとクラウドデータのセルフサービス機能を実装・検証後、正式版として公開します。
-        </p>
-      </section>
-      <section>
-        <h2>問い合わせ</h2>
-        <p>
-          不具合報告、要望、その他のお問い合わせは<a href="support.html"
-            >不具合報告・要望ページ</a
-          >から送信できます。内容の種類が分からない場合も同じフォームから送信できます。アカウント・クラウドデータの削除や開示等の請求は、このフォームでは受け付けていません。
-        </p>
-      </section>
-      <section>
-        <h2>法務・データ文書</h2>
-        <div class="card">
-          <ul>
-            <li><a href="privacy.html">プライバシーポリシー</a></li>
-            <li><a href="terms.html">利用規約</a></li>
-            <li><a href="disclaimer.html">免責事項</a></li>
-            <li>
-              <a href="data-requests.html">アカウント・データの開示と削除</a>
-            </li>
-            <li><a href="licenses.html">第三者ライセンス</a></li>
-            <li><a href="assets.html">公開資産の権利情報</a></li>
-            <li><a href="data-flow.html">データフロー</a></li>
-          </ul>
+
+      <section aria-labelledby="legal-heading">
+        <h2 id="legal-heading">法務・データ文書</h2>
+        <div class="card compact-links">
+          <a href="privacy.html">プライバシーポリシー</a>
+          <a href="terms.html">利用規約</a>
+          <a href="disclaimer.html">免責事項</a>
+          <a href="data-requests.html">アカウント・データの開示と削除</a>
+          <a href="licenses.html">第三者ライセンス</a>
+          <a href="assets.html">公開資産の権利情報</a>
+          <a href="data-flow.html">データフロー</a>
         </div>
       </section>
     </main>
-    <footer>公開主体: Y's<br />制定予定日: 正式公開日</footer>
+    <footer>
+      <p>公開主体: Y's</p>
+      <p>最終更新: 2026-08-07</p>
+    </footer>
   </body>
 </html>
